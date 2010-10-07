@@ -3,14 +3,16 @@
 //  CuteFrame
 //
 
-
 #import <UIKit/UIKit.h>
+#import "FrontViewController.h"
 
 @interface CuteFrameAppDelegate : NSObject <UIApplicationDelegate> {
-    UIWindow *window;
+    UIWindow *w;
+    FrontViewController *f;
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) UIWindow *w;
+@property (nonatomic, retain) FrontViewController *f;
 
 @end
 

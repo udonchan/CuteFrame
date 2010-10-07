@@ -6,13 +6,18 @@
 #import "CuteFrameAppDelegate.h"
 
 @implementation CuteFrameAppDelegate
-@synthesize window;
+@synthesize f, w;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    [window makeKeyAndVisible];
+    f = [[FrontViewController alloc] init];
+    w = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [w makeKeyAndVisible];
+    [w addSubview:f.view];
 	return YES;
 }
 -(void)dealloc {
-    [window release];
+    [f release];
+    [w release];
     [super dealloc];
 }
 @end
