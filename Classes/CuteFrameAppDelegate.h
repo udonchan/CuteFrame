@@ -11,8 +11,5 @@
     FrontViewController *f;
 }
 
-@property (nonatomic, retain) UIWindow *w;
-@property (nonatomic, retain) FrontViewController *f;
-
 @end
 
