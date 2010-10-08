@@ -17,5 +17,6 @@
 }
 
 - (void) changeFreq:(int) y;
+- (void) changeFactor:(int) x;
 - (void) changeColor;
 @end

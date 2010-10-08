@@ -12,6 +12,7 @@
     if (hitLayer == v.layer) {
         isTouch = YES;
         [self changeFreq:location.y];
+        [self changeFactor:location.x];
         [ro play];
     }
 
@@ -22,6 +23,7 @@
     CALayer *hitLayer = [[v layer] hitTest:location];
     if (hitLayer == v.layer) {
         [self changeFreq:location.y];
+        [self changeFactor:location.x];
     }
 }
 
@@ -36,6 +38,10 @@
 
 - (void) changeFreq:(int) y {
     ro.frequency =  pow(680-y, 2)/110;
+}
+
+- (void) changeFactor:(int) x {
+    ro.factor = (double)x/320;
 }
 
 - (void) changeColor {

@@ -13,17 +13,17 @@ static OSStatus renderCallback(void*                       inRefCon,
                                UInt32                      inBusNumber,
                                UInt32                      inNumberFrames,
                                AudioBufferList*            ioData){
-    SineWaveDef* def = (SineWaveDef*)inRefCon;
+    CuteWaveDef* def = (CuteWaveDef*)inRefCon;
     
     double freqz = def->freqz;
     double freq = def->frequency;
     double phase = def->phase;
-    
+    double factor = def->factor;
     AudioUnitSampleType *outL = ioData->mBuffers[0].mData;
     AudioUnitSampleType *outR = ioData->mBuffers[1].mData;
     
     for(int i = 0; i< inNumberFrames; i++){
-        float wave = sin(phase);
+        float wave = sin(phase) * (1 - factor) + (cos(phase) > 0 ? 1.0 : -1.0) * factor / 2;
         AudioUnitSampleType sample = wave * (1 << kAudioUnitSampleFractionBits);
         *outL++ = sample;
         *outR++ = sample;
@@ -47,11 +47,19 @@ static OSStatus renderCallback(void*                       inRefCon,
 }
 
 -(double)frequency{
-    return sineWaveDef.frequency / (2.0 * M_PI) * sineWaveDef.sampleRate;
+    return cuteWaveDef.frequency / (2.0 * M_PI) * cuteWaveDef.sampleRate;
 }
 
 -(void)setFrequency:(double)frequency{
-    sineWaveDef.frequency = frequency * 2.0 * M_PI / sineWaveDef.sampleRate;
+    cuteWaveDef.frequency = frequency * 2.0 * M_PI / cuteWaveDef.sampleRate;
+}
+
+-(double)factor{
+    return cuteWaveDef.factor;
+}
+
+-(void)setFactor:(double)factor{
+    cuteWaveDef.factor = factor;
 }
 
 - (void)prepareAudioUnit{
@@ -74,7 +82,7 @@ static OSStatus renderCallback(void*                       inRefCon,
     
     AURenderCallbackStruct callbackStruct;
     callbackStruct.inputProc = renderCallback;//コールバック関数の設定
-    callbackStruct.inputProcRefCon = &sineWaveDef;//コールバック関数内で参照するデータのポインタ
+    callbackStruct.inputProcRefCon = &cuteWaveDef;//コールバック関数内で参照するデータのポインタ
     
     AudioUnitSetProperty(audioUnit, 
                          kAudioUnitProperty_SetRenderCallback, 
@@ -83,14 +91,15 @@ static OSStatus renderCallback(void*                       inRefCon,
                          &callbackStruct,
                          sizeof(AURenderCallbackStruct));
     
-    sineWaveDef.sampleRate = 44100.0;
-    sineWaveDef.phase = 0.0;
+    cuteWaveDef.sampleRate = 44100.0;
+    cuteWaveDef.phase = 0.0;
+    cuteWaveDef.factor = 0.0;
     
     [self setFrequency:440];
-    sineWaveDef.freqz = sineWaveDef.freqz;
+    cuteWaveDef.freqz = cuteWaveDef.freqz;
     
     AudioStreamBasicDescription audioFormat;
-    audioFormat.mSampleRate         = sineWaveDef.sampleRate;
+    audioFormat.mSampleRate         = cuteWaveDef.sampleRate;
     audioFormat.mFormatID           = kAudioFormatLinearPCM;
     audioFormat.mFormatFlags        = kAudioFormatFlagsAudioUnitCanonical;
     audioFormat.mChannelsPerFrame   = 2;
@@ -116,11 +125,9 @@ static OSStatus renderCallback(void*                       inRefCon,
                                 &size, 
                                 &currentDuration);
         printf("currentDuration = %f\n",currentDuration);
-        //フレームバッファサイズ
-        NSLog(@"frame size = %f", sineWaveDef.sampleRate * currentDuration);
         
         //フレーム数から秒を計算 256 = 希望するフレーム数
-        Float32 duration = 256 / sineWaveDef.sampleRate;
+        Float32 duration = 256 / cuteWaveDef.sampleRate;
         printf("duration = %f\n",duration);
         //IOBufferDurationを変更する
         size = sizeof(Float32);
@@ -135,7 +142,7 @@ static OSStatus renderCallback(void*                       inRefCon,
                                 &size, 
                                 &newDuration);
         printf("newDuration = %f\n",newDuration);
-        NSLog(@"frame size = %f", sineWaveDef.sampleRate * newDuration);
+        NSLog(@"frame size = %f", cuteWaveDef.sampleRate * newDuration);
     }
 }
 

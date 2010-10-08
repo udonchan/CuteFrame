@@ -6,20 +6,22 @@
 #import <AudioUnit/AudioUnit.h>
 #import <AudioToolbox/AudioToolbox.h>
 
-typedef struct SineWaveDef {
+typedef struct CuteWaveDef {
     double phase;
     Float64 sampleRate;
     double frequency;
     double freqz;
-} SineWaveDef;
+    double factor;
+} CuteWaveDef;
 
 @interface RemoteOutput : NSObject {
     AudioUnit audioUnit;    
     BOOL isPlaying;
-    SineWaveDef sineWaveDef;
+    CuteWaveDef cuteWaveDef;
 }
 
 @property(nonatomic) double frequency;
+@property(nonatomic) double factor;
 
 -(void)play;
 -(void)stop;
