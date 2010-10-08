@@ -6,7 +6,40 @@
 #import "FrontViewController.h"
 @implementation FrontViewController
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    CGPoint location = [[touches anyObject] locationInView:v];
+    CALayer *hitLayer = [[v layer] hitTest:location];
+    if (hitLayer == v.layer) {
+        isTouch = YES;
+        [self changeFreq:location.y];
+        [ro play];
+    }
+
+}
+
+- (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    CGPoint location = [[touches anyObject] locationInView:v];
+    CALayer *hitLayer = [[v layer] hitTest:location];
+    if (hitLayer == v.layer) {
+        [self changeFreq:location.y];
+    }
+}
+
+- (void)touchesEnded:(NSSet*)touches withEvent:(UIEvent*)event {
+    CGPoint location = [[touches anyObject] locationInView:v];
+    CALayer *hitLayer = [[v layer] hitTest:location];
+    if (hitLayer == v.layer) {
+        isTouch = NO;
+        [ro stop];
+    }
+}
+
+- (void) changeFreq:(int) y {
+    ro.frequency =  pow(680-y, 2)/110;
+}
+
 - (void) changeColor {
+    if (!isTouch) return;
     if (++cur>=[colors count])
         cur=0;
     [v setBackgroundColor:[colors objectAtIndex:cur]];
@@ -30,21 +63,29 @@
                [UIColor purpleColor],
                [UIColor magentaColor],
                [UIColor cyanColor],nil];
+    ro = [[RemoteOutput alloc] init];
 	return self;
 }
 
 - (void)viewWillAppear:(BOOL)animated {	
-    timer = [NSTimer scheduledTimerWithTimeInterval:(0.05) 
+    timer = [NSTimer scheduledTimerWithTimeInterval:(0.01) 
                                                  target:self
                                                selector:@selector(changeColor)
                                                userInfo:nil
                                                 repeats:YES];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    if (timer) {
+        [timer invalidate];
+        timer = nil;
+    }
+}
+
 - (void)dealloc {
     [super dealloc];
-    [timer invalidate];
     [v release];
+    [ro release];
 }
 
 

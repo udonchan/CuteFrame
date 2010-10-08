@@ -12,6 +12,8 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		8C212B07125EF2490071F500 /* RemoteOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C212B06125EF2490071F500 /* RemoteOutput.m */; };
+		8C212B11125EF26D0071F500 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C212B10125EF26D0071F500 /* AudioToolbox.framework */; };
 		8CBEF287125D63E90058EA44 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,9 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* CuteFrame_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CuteFrame_Prefix.pch; sourceTree = "<group>"; };
+		8C212B05125EF2490071F500 /* RemoteOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteOutput.h; sourceTree = "<group>"; };
+		8C212B06125EF2490071F500 /* RemoteOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteOutput.m; sourceTree = "<group>"; };
+		8C212B10125EF26D0071F500 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8CBEF285125D63E90058EA44 /* FrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontViewController.h; sourceTree = "<group>"; };
 		8CBEF286125D63E90058EA44 /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontViewController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* CuteFrame-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CuteFrame-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -37,6 +42,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				8C212B11125EF26D0071F500 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +52,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8C212B05125EF2490071F500 /* RemoteOutput.h */,
+				8C212B06125EF2490071F500 /* RemoteOutput.m */,
 				1D3623240D0F684500981E51 /* CuteFrameAppDelegate.h */,
 				1D3623250D0F684500981E51 /* CuteFrameAppDelegate.m */,
 				8CBEF285125D63E90058EA44 /* FrontViewController.h */,
@@ -97,6 +105,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				8C212B10125EF26D0071F500 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,6 +165,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* CuteFrameAppDelegate.m in Sources */,
 				8CBEF287125D63E90058EA44 /* FrontViewController.m in Sources */,
+				8C212B07125EF2490071F500 /* RemoteOutput.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
