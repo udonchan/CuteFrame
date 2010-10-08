@@ -14,6 +14,8 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		8C212B07125EF2490071F500 /* RemoteOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C212B06125EF2490071F500 /* RemoteOutput.m */; };
 		8C212B11125EF26D0071F500 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C212B10125EF26D0071F500 /* AudioToolbox.framework */; };
+		8C212C5A125F27D80071F500 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C212C59125F27D80071F500 /* Default.png */; };
+		8C212C5E125F2A3A0071F500 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C212C5D125F2A3A0071F500 /* icon.png */; };
 		8CBEF287125D63E90058EA44 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		8C212B05125EF2490071F500 /* RemoteOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteOutput.h; sourceTree = "<group>"; };
 		8C212B06125EF2490071F500 /* RemoteOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteOutput.m; sourceTree = "<group>"; };
 		8C212B10125EF26D0071F500 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8C212C59125F27D80071F500 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8C212C5D125F2A3A0071F500 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		8CBEF285125D63E90058EA44 /* FrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontViewController.h; sourceTree = "<group>"; };
 		8CBEF286125D63E90058EA44 /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontViewController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* CuteFrame-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CuteFrame-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8C212C5D125F2A3A0071F500 /* icon.png */,
+				8C212C59125F27D80071F500 /* Default.png */,
 				8D1107310486CEB800E47090 /* CuteFrame-Info.plist */,
 			);
 			name = Resources;
@@ -152,6 +158,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C212C5A125F27D80071F500 /* Default.png in Resources */,
+				8C212C5E125F2A3A0071F500 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
