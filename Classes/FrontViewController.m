@@ -37,7 +37,7 @@
 }
 
 - (void) changeFreq:(int) y {
-    ro.frequency =  pow(680-y, 2)/110;
+    ro.frequency = pow((480.0-y)/480, 2)*(MAX_FREQ-MIN_FREQ)+MIN_FREQ;
 }
 
 - (void) changeFactor:(int) x {
