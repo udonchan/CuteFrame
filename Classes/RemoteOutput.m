@@ -28,7 +28,6 @@ static OSStatus renderCallback(void*                       inRefCon,
         *outL++ = sample;
         *outR++ = sample;
         phase = phase + freqz;        
-        //滑らかに変化させる
         freqz = 0.001 * freq + 0.999 * freqz;
     }
     def->freqz = freqz;
@@ -63,41 +62,28 @@ static OSStatus renderCallback(void*                       inRefCon,
 }
 
 - (void)prepareAudioUnit{
-    //RemoteIO Audio UnitのAudioComponentDescriptionを作成
     AudioComponentDescription cd;
     cd.componentType = kAudioUnitType_Output;
     cd.componentSubType = kAudioUnitSubType_RemoteIO;
     cd.componentManufacturer = kAudioUnitManufacturer_Apple;
     cd.componentFlags = 0;
     cd.componentFlagsMask = 0;
-    
-    //AudioComponentDescriptionからAudioComponentを取得
-    AudioComponent component = AudioComponentFindNext(NULL, &cd);
-    
-    //AudioComponentとAudioUnitのアドレスを渡してAudioUnitを取得
-    AudioComponentInstanceNew(component, &audioUnit);
-    
-    //AudioUnitを初期化
+    AudioComponentInstanceNew(AudioComponentFindNext(NULL, &cd), &audioUnit);
     AudioUnitInitialize(audioUnit);
-    
     AURenderCallbackStruct callbackStruct;
-    callbackStruct.inputProc = renderCallback;//コールバック関数の設定
-    callbackStruct.inputProcRefCon = &cuteWaveDef;//コールバック関数内で参照するデータのポインタ
-    
+    callbackStruct.inputProc = renderCallback;
+    callbackStruct.inputProcRefCon = &cuteWaveDef;
     AudioUnitSetProperty(audioUnit, 
                          kAudioUnitProperty_SetRenderCallback, 
-                         kAudioUnitScope_Input, //サイン波の値はAudioUnitに入ってくるものなのでScopeはInput
-                         0,   // 0 == スピーカー
+                         kAudioUnitScope_Input,
+                         0,
                          &callbackStruct,
                          sizeof(AURenderCallbackStruct));
-    
     cuteWaveDef.sampleRate = 44100.0;
     cuteWaveDef.phase = 0.0;
     cuteWaveDef.factor = 0.0;
-    
     [self setFrequency:440];
     cuteWaveDef.freqz = cuteWaveDef.freqz;
-    
     AudioStreamBasicDescription audioFormat;
     audioFormat.mSampleRate         = cuteWaveDef.sampleRate;
     audioFormat.mFormatID           = kAudioFormatLinearPCM;
@@ -108,42 +94,12 @@ static OSStatus renderCallback(void*                       inRefCon,
     audioFormat.mFramesPerPacket    = 1;
     audioFormat.mBitsPerChannel     = 8 * sizeof(AudioUnitSampleType);
     audioFormat.mReserved           = 0;
-    
     AudioUnitSetProperty(audioUnit,
                          kAudioUnitProperty_StreamFormat,
                          kAudioUnitScope_Input,
                          0,
                          &audioFormat,
                          sizeof(audioFormat));
-    
-    //フレームバッファサイズの変更
-    {
-        AudioSessionInitialize(NULL, NULL, NULL,NULL);
-        Float32 currentDuration;
-        UInt32 size = sizeof(Float32);        
-        AudioSessionGetProperty(kAudioSessionProperty_CurrentHardwareIOBufferDuration, 
-                                &size, 
-                                &currentDuration);
-        printf("currentDuration = %f\n",currentDuration);
-        
-        //フレーム数から秒を計算 256 = 希望するフレーム数
-        Float32 duration = 256 / cuteWaveDef.sampleRate;
-        printf("duration = %f\n",duration);
-        //IOBufferDurationを変更する
-        size = sizeof(Float32);
-        AudioSessionSetProperty(kAudioSessionProperty_PreferredHardwareIOBufferDuration, 
-                                size,
-                                &duration);
-        
-        //変更後の値を確認してみる
-        Float32 newDuration;
-        size = sizeof(Float32);
-        AudioSessionGetProperty(kAudioSessionProperty_CurrentHardwareIOBufferDuration, 
-                                &size, 
-                                &newDuration);
-        printf("newDuration = %f\n",newDuration);
-        NSLog(@"frame size = %f", cuteWaveDef.sampleRate * newDuration);
-    }
 }
 
 -(void)play{
