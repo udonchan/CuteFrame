@@ -22,10 +22,6 @@
     CGPoint location = [[touches anyObject] locationInView:v];
     CALayer *hitLayer = [[v layer] hitTest:location];
     if (hitLayer == v.layer) {
-        /*
-        [self changeFactor:[[[event touchesForView:v] anyObject] locationInView:v].x];
-        [self changeFreq:[[[event touchesForView:v] anyObject] locationInView:v].y];
-         */
         [self changeFreq:location.y];
         [self changeFactor:location.x];
     }
@@ -54,14 +50,12 @@
 
 - (void) changeColor {
     if (!isTouch) return;
-    if (++cur>=[colors count])
-        cur=0;
-    [v setBackgroundColor:[colors objectAtIndex:cur]];
+    [v changeColor];
 }
 
 - (void)loadView {
     [super loadView];
-    v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    v = [[CuteView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
     [v setMultipleTouchEnabled:YES];
     [v setBackgroundColor:[UIColor blackColor]];
     [self setView:v];
@@ -70,14 +64,6 @@
 - (id) init {
 	self = [super init];
 	self.title = @"CuteFrame";
-    colors = [[NSArray alloc] initWithObjects:
-               [UIColor redColor],
-               [UIColor greenColor],
-               [UIColor blueColor],
-               [UIColor yellowColor],
-               [UIColor purpleColor],
-               [UIColor magentaColor],
-               [UIColor cyanColor],nil];
     ro = [[RemoteOutput alloc] init];
 	return self;
 }
