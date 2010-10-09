@@ -22,6 +22,10 @@
     CGPoint location = [[touches anyObject] locationInView:v];
     CALayer *hitLayer = [[v layer] hitTest:location];
     if (hitLayer == v.layer) {
+        /*
+        [self changeFactor:[[[event touchesForView:v] anyObject] locationInView:v].x];
+        [self changeFreq:[[[event touchesForView:v] anyObject] locationInView:v].y];
+         */
         [self changeFreq:location.y];
         [self changeFactor:location.x];
     }
@@ -30,9 +34,13 @@
 - (void)touchesEnded:(NSSet*)touches withEvent:(UIEvent*)event {
     CGPoint location = [[touches anyObject] locationInView:v];
     CALayer *hitLayer = [[v layer] hitTest:location];
-    if (hitLayer == v.layer) {
+    if (hitLayer == v.layer && [[event touchesForView:v] count] <= 1) {
         isTouch = NO;
         [ro stop];
+        [v setBackgroundColor:[UIColor blackColor]];
+    } else {
+        [self changeFactor:[[[event touchesForView:v] anyObject] locationInView:v].x];
+        [self changeFreq:[[[event touchesForView:v] anyObject] locationInView:v].y];
     }
 }
 
@@ -54,7 +62,8 @@
 - (void)loadView {
     [super loadView];
     v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
-    [v setBackgroundColor:[colors objectAtIndex:0]];
+    [v setMultipleTouchEnabled:YES];
+    [v setBackgroundColor:[UIColor blackColor]];
     [self setView:v];
 }
 
