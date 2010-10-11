@@ -8,17 +8,17 @@
 #import "RemoteOutput.h"
 #import "CuteView.h"
 
-#define MIN_FREQ 60
-#define MAX_FREQ 12000
-
 @interface FrontViewController : UIViewController {
     RemoteOutput *ro;
     CuteView *v;
     NSTimer *timer; 
     BOOL isTouch;
+    NSUserDefaults *setting;
+    int max, min;
 }
 
 - (void) changeFreq:(int) y;
 - (void) changeFactor:(int) x;
 - (void) changeColor;
+- (int) note2freq:(int)note_number;
 @end

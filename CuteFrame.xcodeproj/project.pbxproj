@@ -17,6 +17,7 @@
 		8C212C5A125F27D80071F500 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C212C59125F27D80071F500 /* Default.png */; };
 		8C212C5E125F2A3A0071F500 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C212C5D125F2A3A0071F500 /* icon.png */; };
 		8CA49FEB125FEDB30045D85B /* CuteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA49FEA125FEDB30045D85B /* CuteView.m */; };
+		8CA4A0841262DF660045D85B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8CA4A0831262DF660045D85B /* Settings.bundle */; };
 		8CBEF287125D63E90058EA44 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		8C212C5D125F2A3A0071F500 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		8CA49FE9125FEDB30045D85B /* CuteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CuteView.h; sourceTree = "<group>"; };
 		8CA49FEA125FEDB30045D85B /* CuteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CuteView.m; sourceTree = "<group>"; };
+		8CA4A0831262DF660045D85B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		8CBEF285125D63E90058EA44 /* FrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontViewController.h; sourceTree = "<group>"; };
 		8CBEF286125D63E90058EA44 /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontViewController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* CuteFrame-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CuteFrame-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				8C212C5D125F2A3A0071F500 /* icon.png */,
 				8C212C59125F27D80071F500 /* Default.png */,
 				8D1107310486CEB800E47090 /* CuteFrame-Info.plist */,
+				8CA4A0831262DF660045D85B /* Settings.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			files = (
 				8C212C5A125F27D80071F500 /* Default.png in Resources */,
 				8C212C5E125F2A3A0071F500 /* icon.png in Resources */,
+				8CA4A0841262DF660045D85B /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,11 +253,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chiaki Uchiyama (8WWWEKHT88)";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9D6E4B5D-6FE0-4102-B02B-0A87077DDFEC";
 				SDKROOT = iphoneos4.0;
 			};
 			name = Debug;

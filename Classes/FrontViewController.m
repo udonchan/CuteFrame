@@ -41,7 +41,7 @@
 }
 
 - (void) changeFreq:(int) y {
-    ro.frequency = pow((480.0-y)/480, 2)*(MAX_FREQ-MIN_FREQ)+MIN_FREQ;
+    ro.frequency = pow((480.0-y)/480, 2) * (max - min) + min;
 }
 
 - (void) changeFactor:(int) x {
@@ -53,11 +53,32 @@
     [v changeColor];
 }
 
+- (int) note2freq:(int)note_number {
+    return pow(2, (note_number - 69) / 12) * 440;
+}
+
 - (void)loadView {
     [super loadView];
     v = [[CuteView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
     [v setMultipleTouchEnabled:YES];
     [v setBackgroundColor:[UIColor blackColor]];
+#ifdef DEBUG
+    NSString *str = [NSString stringWithFormat:@"debug\nMaxFreq : %d \nMinFreq : %d",
+//                    [setting stringForKey:@"max_note"], [setting stringForKey:@"min_note"]];
+                      max, min];
+    UIFont *font = [UIFont systemFontOfSize:12];
+    UILabel *debugStr = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, [str sizeWithFont:font
+                                                                             constrainedToSize:CGSizeMake(320, 2000) 
+                                                                                 lineBreakMode:UILineBreakModeWordWrap].height
+                                                                  )];
+    [debugStr setFont:font];
+    [debugStr setBackgroundColor:[UIColor blackColor]];
+    [debugStr setTextColor:[UIColor whiteColor]];
+    [debugStr setNumberOfLines:0];
+    [debugStr setLineBreakMode:UILineBreakModeWordWrap];
+    [debugStr setText:str];
+    [v addSubview:debugStr];
+#endif
     [self setView:v];
 }
 
@@ -65,6 +86,15 @@
 	self = [super init];
 	self.title = @"CuteFrame";
     ro = [[RemoteOutput alloc] init];
+
+    setting = [NSUserDefaults standardUserDefaults];
+    max = (int)[[setting stringForKey:@"max_note"] floatValue];
+    min = (int)[[setting stringForKey:@"min_note"] floatValue];
+    if (max < 40 || 127 < max) max = 127;
+    if (min < 40 || 127 < min) min = 40;
+    if (max < min) min = max;
+    max = [self note2freq:max];
+    min = [self note2freq:min];
 	return self;
 }
 
@@ -85,6 +115,7 @@
 
 - (void)dealloc {
     [super dealloc];
+    [setting release];
     [v release];
     [ro release];
 }
