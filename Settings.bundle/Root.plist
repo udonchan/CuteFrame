@@ -42,6 +42,26 @@
 			<key>MaximumValue</key>
 			<integer>127</integer>
 		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Key</key>
+			<string>scale</string>
+			<key>Title</key>
+			<string>Scale</string>
+			<key>DefaultValue</key>
+			<string></string>
+			<key>Values</key>
+			<array>
+				<string>0</string>
+				<string>1</string>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>None</string>
+				<string>chromatic</string>
+			</array>
+		</dict>
 	</array>
 </dict>
 </plist>
