@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>CuteFrame</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Max Freq</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSSliderSpecifier</string>
+			<key>Key</key>
+			<string>max_note</string>
+			<key>DefaultValue</key>
+			<integer>127</integer>
+			<key>MinimumValue</key>
+			<integer>40</integer>
+			<key>MaximumValue</key>
+			<integer>127</integer>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Min Freq</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSSliderSpecifier</string>
+			<key>Key</key>
+			<string>min_note</string>
+			<key>DefaultValue</key>
+			<integer>40</integer>
+			<key>MinimumValue</key>
+			<integer>40</integer>
+			<key>MaximumValue</key>
+			<integer>127</integer>
+		</dict>
+	</array>
+</dict>
+</plist>
