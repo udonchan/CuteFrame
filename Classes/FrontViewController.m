@@ -41,7 +41,12 @@
 }
 
 - (void) changeFreq:(int) y {
-    ro.frequency = pow((480.0-y)/480, 2) * (max - min) + min;
+    if (mode == SCALE_NONE)
+        ro.frequency = pow((480.0-y)/480, 2) * (max_freq - min_freq) + min_freq;
+    else if (mode == SCALE_CHROMATIC){
+        NSLog(@"%d", [self note2freq:(int)floor((480.0-y)/480 * (max - min)) + min]);
+        ro.frequency = [self note2freq:(int)floor((480.0-y)/480 * (max-min)) + min];
+    }
 }
 
 - (void) changeFactor:(int) x {
@@ -54,7 +59,7 @@
 }
 
 - (int) note2freq:(int)note_number {
-    return pow(2, (note_number - 69) / 12) * 440;
+    return (int)(pow(2, ((float)note_number - 69) / 12) * 440);
 }
 
 - (void)loadView {
@@ -93,8 +98,9 @@
     if (max < 40 || 127 < max) max = 127;
     if (min < 40 || 127 < min) min = 40;
     if (max < min) min = max;
-    max = [self note2freq:max];
-    min = [self note2freq:min];
+    max_freq = [self note2freq:max];
+    min_freq = [self note2freq:min];
+    mode = [[setting stringForKey:@"scale"] intValue];
 	return self;
 }
 

@@ -8,13 +8,17 @@
 #import "RemoteOutput.h"
 #import "CuteView.h"
 
+#define SCALE_NONE 0
+#define SCALE_CHROMATIC 1
+
 @interface FrontViewController : UIViewController {
     RemoteOutput *ro;
     CuteView *v;
     NSTimer *timer; 
     BOOL isTouch;
     NSUserDefaults *setting;
-    int max, min;
+    int max, min, max_freq, min_freq;
+    int mode;
 }
 
 - (void) changeFreq:(int) y;
