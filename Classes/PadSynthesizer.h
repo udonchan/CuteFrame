@@ -4,11 +4,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <UIKit/UIResponder.h>
 #import <QuartzCore/QuartzCore.h>
 #import "RemoteOutput.h"
 
-@interface PadSynthesizer : UIResponder {
+@interface PadSynthesizer : NSObject {
     RemoteOutput *ro;
     NSUserDefaults *setting;
     int max_note, min_note, max_freq, min_freq;
