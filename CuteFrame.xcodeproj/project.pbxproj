@@ -16,6 +16,8 @@
 		8C212B11125EF26D0071F500 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C212B10125EF26D0071F500 /* AudioToolbox.framework */; };
 		8C212C5A125F27D80071F500 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C212C59125F27D80071F500 /* Default.png */; };
 		8C212C5E125F2A3A0071F500 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C212C5D125F2A3A0071F500 /* icon.png */; };
+		8C46269012643C62003F7A0F /* PadSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C46268F12643C62003F7A0F /* PadSynthesizer.m */; };
+		8C46276812644EFF003F7A0F /* ChromaticPadSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C46276712644EFF003F7A0F /* ChromaticPadSynthesizer.m */; };
 		8CA49FEB125FEDB30045D85B /* CuteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA49FEA125FEDB30045D85B /* CuteView.m */; };
 		8CA4A0841262DF660045D85B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8CA4A0831262DF660045D85B /* Settings.bundle */; };
 		8CBEF287125D63E90058EA44 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */; };
@@ -35,6 +37,10 @@
 		8C212B10125EF26D0071F500 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8C212C59125F27D80071F500 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		8C212C5D125F2A3A0071F500 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		8C46268E12643C62003F7A0F /* PadSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PadSynthesizer.h; sourceTree = "<group>"; };
+		8C46268F12643C62003F7A0F /* PadSynthesizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PadSynthesizer.m; sourceTree = "<group>"; };
+		8C46276612644EFF003F7A0F /* ChromaticPadSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChromaticPadSynthesizer.h; sourceTree = "<group>"; };
+		8C46276712644EFF003F7A0F /* ChromaticPadSynthesizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChromaticPadSynthesizer.m; sourceTree = "<group>"; };
 		8CA49FE9125FEDB30045D85B /* CuteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CuteView.h; sourceTree = "<group>"; };
 		8CA49FEA125FEDB30045D85B /* CuteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CuteView.m; sourceTree = "<group>"; };
 		8CA4A0831262DF660045D85B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -62,7 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				8CA49FF7125FEDFE0045D85B /* app */,
-				8CA49FF6125FEDF20045D85B /* others */,
+				8CA49FF6125FEDF20045D85B /* Synthesizer */,
+				8C46279112645259003F7A0F /* PadSynthesizer */,
 				8CA49FF5125FEDE10045D85B /* ViewControllers */,
 				8CA49FF4125FEDC30045D85B /* Views */,
 			);
@@ -120,6 +127,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8C46279112645259003F7A0F /* PadSynthesizer */ = {
+			isa = PBXGroup;
+			children = (
+				8C46268E12643C62003F7A0F /* PadSynthesizer.h */,
+				8C46268F12643C62003F7A0F /* PadSynthesizer.m */,
+				8C46276612644EFF003F7A0F /* ChromaticPadSynthesizer.h */,
+				8C46276712644EFF003F7A0F /* ChromaticPadSynthesizer.m */,
+			);
+			name = PadSynthesizer;
+			sourceTree = "<group>";
+		};
 		8CA49FF4125FEDC30045D85B /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,13 +156,13 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		8CA49FF6125FEDF20045D85B /* others */ = {
+		8CA49FF6125FEDF20045D85B /* Synthesizer */ = {
 			isa = PBXGroup;
 			children = (
 				8C212B05125EF2490071F500 /* RemoteOutput.h */,
 				8C212B06125EF2490071F500 /* RemoteOutput.m */,
 			);
-			name = others;
+			name = Synthesizer;
 			sourceTree = "<group>";
 		};
 		8CA49FF7125FEDFE0045D85B /* app */ = {
@@ -216,6 +234,8 @@
 				8CBEF287125D63E90058EA44 /* FrontViewController.m in Sources */,
 				8C212B07125EF2490071F500 /* RemoteOutput.m in Sources */,
 				8CA49FEB125FEDB30045D85B /* CuteView.m in Sources */,
+				8C46269012643C62003F7A0F /* PadSynthesizer.m in Sources */,
+				8C46276812644EFF003F7A0F /* ChromaticPadSynthesizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

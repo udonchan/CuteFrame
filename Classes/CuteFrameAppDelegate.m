@@ -15,9 +15,11 @@
     [w addSubview:f.view];
 	return YES;
 }
+
 - (void) dealloc {
     [f release];
     [w release];
     [super dealloc];
 }
+
 @end
