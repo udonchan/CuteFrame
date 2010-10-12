@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -280,8 +278,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>15</integer>
-									<integer>13</integer>
+									<integer>9</integer>
+									<integer>8</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -317,12 +315,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>FrontViewController.m</string>
+								<string>PadSynthesizer.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,11 +330,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>FrontViewController.m</string>
+										<string>PadSynthesizer.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8C4627AB12645368003F7A0F</string>
+										<string>8C4627B312645494003F7A0F</string>
 										<key>history</key>
 										<array>
 											<string>8C77C2BC1263036200E274AA</string>
@@ -347,14 +347,14 @@
 											<string>8C46279612645283003F7A0F</string>
 											<string>8C4627A112645368003F7A0F</string>
 											<string>8C4627A212645368003F7A0F</string>
-											<string>8C4627A312645368003F7A0F</string>
-											<string>8C4627A412645368003F7A0F</string>
 											<string>8C4627A512645368003F7A0F</string>
-											<string>8C4627A612645368003F7A0F</string>
-											<string>8C4627A712645368003F7A0F</string>
 											<string>8C4627A812645368003F7A0F</string>
 											<string>8C4627A912645368003F7A0F</string>
-											<string>8C4627AA12645368003F7A0F</string>
+											<string>8C4627AE12645494003F7A0F</string>
+											<string>8C4627AF12645494003F7A0F</string>
+											<string>8C4627B012645494003F7A0F</string>
+											<string>8C4627B112645494003F7A0F</string>
+											<string>8C4627B212645494003F7A0F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

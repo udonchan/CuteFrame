@@ -14,7 +14,7 @@
     int max_note, min_note, max_freq, min_freq;
 }
 
-@property(assign) int max_note, min_note, max_freq, min_freq;
+@property(assign, readonly) int max_note, min_note, max_freq, min_freq;
 
 - (int) note2freq:(int)note_number;
 - (void) changeFreq:(int) p;

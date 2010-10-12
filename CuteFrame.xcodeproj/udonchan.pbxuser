@@ -142,6 +142,12 @@
 			8C4627A912645368003F7A0F /* PBXTextBookmark */ = 8C4627A912645368003F7A0F /* PBXTextBookmark */;
 			8C4627AA12645368003F7A0F /* PBXTextBookmark */ = 8C4627AA12645368003F7A0F /* PBXTextBookmark */;
 			8C4627AB12645368003F7A0F /* PBXTextBookmark */ = 8C4627AB12645368003F7A0F /* PBXTextBookmark */;
+			8C4627AE12645494003F7A0F /* PBXTextBookmark */ = 8C4627AE12645494003F7A0F /* PBXTextBookmark */;
+			8C4627AF12645494003F7A0F /* PBXTextBookmark */ = 8C4627AF12645494003F7A0F /* PBXTextBookmark */;
+			8C4627B012645494003F7A0F /* PBXTextBookmark */ = 8C4627B012645494003F7A0F /* PBXTextBookmark */;
+			8C4627B112645494003F7A0F /* PBXTextBookmark */ = 8C4627B112645494003F7A0F /* PBXTextBookmark */;
+			8C4627B212645494003F7A0F /* PBXTextBookmark */ = 8C4627B212645494003F7A0F /* PBXTextBookmark */;
+			8C4627B312645494003F7A0F /* PBXTextBookmark */ = 8C4627B312645494003F7A0F /* PBXTextBookmark */;
 			8C77C2BB1263036200E274AA = 8C77C2BB1263036200E274AA /* PBXBookmark */;
 			8C77C2BC1263036200E274AA = 8C77C2BC1263036200E274AA /* PBXBookmark */;
 			8C77C2BD1263036200E274AA = 8C77C2BD1263036200E274AA /* PBXTextBookmark */;
@@ -385,15 +391,15 @@
 	8C46268E12643C62003F7A0F /* PadSynthesizer.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1007, 620}}";
-			sepNavSelRange = "{362, 0}";
-			sepNavVisRange = "{0, 534}";
+			sepNavSelRange = "{326, 0}";
+			sepNavVisRange = "{0, 544}";
 		};
 	};
 	8C46268F12643C62003F7A0F /* PadSynthesizer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 936}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 1026}}";
 			sepNavSelRange = "{645, 0}";
-			sepNavVisRange = "{3, 939}";
+			sepNavVisRange = "{0, 911}";
 		};
 	};
 	8C4626A71264437D003F7A0F /* PBXTextBookmark */ = {
@@ -718,7 +724,7 @@
 		fRef = 8C46268E12643C62003F7A0F /* PadSynthesizer.h */;
 		name = "PadSynthesizer.h: 17";
 		rLen = 0;
-		rLoc = 398;
+		rLoc = 408;
 		rType = 0;
 		vrLen = 474;
 		vrLoc = 0;
@@ -921,7 +927,7 @@
 		fRef = 8C46268E12643C62003F7A0F /* PadSynthesizer.h */;
 		name = "PadSynthesizer.h: 18";
 		rLen = 0;
-		rLoc = 362;
+		rLoc = 372;
 		rType = 0;
 		vrLen = 534;
 		vrLoc = 0;
@@ -931,7 +937,7 @@
 		fRef = 8C46268E12643C62003F7A0F /* PadSynthesizer.h */;
 		name = "PadSynthesizer.h: 18";
 		rLen = 0;
-		rLoc = 362;
+		rLoc = 372;
 		rType = 0;
 		vrLen = 534;
 		vrLoc = 0;
@@ -1001,7 +1007,7 @@
 		fRef = 8C46268E12643C62003F7A0F /* PadSynthesizer.h */;
 		name = "PadSynthesizer.h: 18";
 		rLen = 0;
-		rLoc = 362;
+		rLoc = 372;
 		rType = 0;
 		vrLen = 534;
 		vrLoc = 0;
@@ -1045,6 +1051,66 @@
 		rType = 0;
 		vrLen = 1326;
 		vrLoc = 510;
+	};
+	8C4627AE12645494003F7A0F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */;
+		name = "FrontViewController.m: 31";
+		rLen = 0;
+		rLoc = 899;
+		rType = 0;
+		vrLen = 1067;
+		vrLoc = 117;
+	};
+	8C4627AF12645494003F7A0F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
+		name = "FrontViewController.h: 21";
+		rLen = 0;
+		rLoc = 414;
+		rType = 0;
+		vrLen = 454;
+		vrLoc = 0;
+	};
+	8C4627B012645494003F7A0F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C46276712644EFF003F7A0F /* ChromaticPadSynthesizer.m */;
+		name = "ChromaticPadSynthesizer.m: 13";
+		rLen = 0;
+		rLoc = 259;
+		rType = 0;
+		vrLen = 265;
+		vrLoc = 0;
+	};
+	8C4627B112645494003F7A0F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C46268F12643C62003F7A0F /* PadSynthesizer.m */;
+		name = "PadSynthesizer.m: 21";
+		rLen = 0;
+		rLoc = 645;
+		rType = 0;
+		vrLen = 911;
+		vrLoc = 0;
+	};
+	8C4627B212645494003F7A0F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C46268E12643C62003F7A0F /* PadSynthesizer.h */;
+		name = "PadSynthesizer.h: 18";
+		rLen = 0;
+		rLoc = 372;
+		rType = 0;
+		vrLen = 534;
+		vrLoc = 0;
+	};
+	8C4627B312645494003F7A0F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C46268E12643C62003F7A0F /* PadSynthesizer.h */;
+		name = "PadSynthesizer.h: 17";
+		rLen = 0;
+		rLoc = 326;
+		rType = 0;
+		vrLen = 544;
+		vrLoc = 0;
 	};
 	8C77C2BB1263036200E274AA /* PBXBookmark */ = {
 		isa = PBXBookmark;
@@ -1265,8 +1331,8 @@
 	8CBEF286125D63E90058EA44 /* FrontViewController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1146, 1674}}";
-			sepNavSelRange = "{941, 0}";
-			sepNavVisRange = "{510, 1326}";
+			sepNavSelRange = "{899, 0}";
+			sepNavVisRange = "{117, 1067}";
 			sepNavWindowFrame = "{{19, 0}, {1223, 778}}";
 		};
 	};
