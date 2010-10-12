@@ -18,6 +18,7 @@
 		8C212C5E125F2A3A0071F500 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C212C5D125F2A3A0071F500 /* icon.png */; };
 		8C46269012643C62003F7A0F /* PadSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C46268F12643C62003F7A0F /* PadSynthesizer.m */; };
 		8C46276812644EFF003F7A0F /* ChromaticPadSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C46276712644EFF003F7A0F /* ChromaticPadSynthesizer.m */; };
+		8C4627B612648A9B003F7A0F /* DebugLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4627B512648A9B003F7A0F /* DebugLabelView.m */; };
 		8CA49FEB125FEDB30045D85B /* CuteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA49FEA125FEDB30045D85B /* CuteView.m */; };
 		8CA4A0841262DF660045D85B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8CA4A0831262DF660045D85B /* Settings.bundle */; };
 		8CBEF287125D63E90058EA44 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */; };
@@ -41,6 +42,8 @@
 		8C46268F12643C62003F7A0F /* PadSynthesizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PadSynthesizer.m; sourceTree = "<group>"; };
 		8C46276612644EFF003F7A0F /* ChromaticPadSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChromaticPadSynthesizer.h; sourceTree = "<group>"; };
 		8C46276712644EFF003F7A0F /* ChromaticPadSynthesizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChromaticPadSynthesizer.m; sourceTree = "<group>"; };
+		8C4627B412648A9B003F7A0F /* DebugLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugLabelView.h; sourceTree = "<group>"; };
+		8C4627B512648A9B003F7A0F /* DebugLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugLabelView.m; sourceTree = "<group>"; };
 		8CA49FE9125FEDB30045D85B /* CuteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CuteView.h; sourceTree = "<group>"; };
 		8CA49FEA125FEDB30045D85B /* CuteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CuteView.m; sourceTree = "<group>"; };
 		8CA4A0831262DF660045D85B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 			children = (
 				8CA49FE9125FEDB30045D85B /* CuteView.h */,
 				8CA49FEA125FEDB30045D85B /* CuteView.m */,
+				8C4627B412648A9B003F7A0F /* DebugLabelView.h */,
+				8C4627B512648A9B003F7A0F /* DebugLabelView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 				8CA49FEB125FEDB30045D85B /* CuteView.m in Sources */,
 				8C46269012643C62003F7A0F /* PadSynthesizer.m in Sources */,
 				8C46276812644EFF003F7A0F /* ChromaticPadSynthesizer.m in Sources */,
+				8C4627B612648A9B003F7A0F /* DebugLabelView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

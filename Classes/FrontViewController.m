@@ -17,6 +17,7 @@
 - (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     CGPoint location = [[touches anyObject] locationInView:v];
     [ps setPointX:location.x andY:location.y];
+
 }
 
 - (void) touchesEnded:(NSSet*)touches withEvent:(UIEvent*)event {
@@ -31,8 +32,7 @@
 }
 
 - (void) changeColor {
-    if (!isTouch) return;
-    [v changeColor];
+    if (isTouch) [v changeColor];
 }
 
 - (void)loadView {
@@ -40,27 +40,9 @@
     v = [[CuteView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
     [v setMultipleTouchEnabled:YES];
     [v setBackgroundColor:[UIColor blackColor]];
-
 #ifdef DEBUG
-    NSString *str = [NSString stringWithFormat:@"DEBUG\n"
-                     "max_note\t : %d \n"
-                     "min_note\t : %d \n"
-                     "max_freq\t : %d \n"
-                     "min_freq\t : %d \n"
-                     "scale_mode\t : %d",
-                     ps.max_note, ps.min_note, ps.max_freq, ps.min_freq, [[setting stringForKey:@"scale"]intValue]];
-    UIFont *font = [UIFont systemFontOfSize:12];
-    UILabel *debugStr = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, [str sizeWithFont:font
-                                                                             constrainedToSize:CGSizeMake(320, 2000) 
-                                                                                 lineBreakMode:UILineBreakModeWordWrap].height
-                                                                  )];
-    [debugStr setFont:font];
-    [debugStr setBackgroundColor:[UIColor blackColor]];
-    [debugStr setTextColor:[UIColor whiteColor]];
-    [debugStr setNumberOfLines:0];
-    [debugStr setLineBreakMode:UILineBreakModeWordWrap];
-    [debugStr setText:str];
-    [v addSubview:debugStr];
+    dlv = [[DebugLabelView alloc] initWith:ps andSetting:setting];
+    [v addSubview:dlv];
 #endif
 
     [self setView:v];

@@ -3,11 +3,9 @@
 //  CuteFrame
 //
 
-#import <Foundation/Foundation.h>
 #import "PadSynthesizer.h"
 
-@interface ChromaticPadSynthesizer : PadSynthesizer {
+@interface ChromaticPadSynthesizer : PadSynthesizer {}
 
-}
-
+- (int) point2note:(int) p ;
 @end

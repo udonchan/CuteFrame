@@ -6,7 +6,7 @@
 #import "PadSynthesizer.h"
 
 @implementation PadSynthesizer
-@synthesize max_note, min_note, max_freq, min_freq;
+@synthesize max_note, min_note, max_freq, min_freq, ro;
 
 -(id) init {
     [super init];
@@ -28,8 +28,12 @@
     [setting release];
 }
 
-- (void) changeFreq:(int) p {
-    ro.frequency = pow((480.0-p)/480, 2) * (max_freq - min_freq) + min_freq;
+- (void) changeFreq:(double) freq {
+    ro.frequency = freq;
+}
+
+- (double) genFreq:(int) p {
+    return pow((480.0-p)/480, 2) * (max_freq - min_freq) + min_freq;
 }
 
 - (void) changeFactor:(int) p {
@@ -40,9 +44,10 @@
     return (int)(pow(2, ((float)note_number - 69) / 12) * 440);
 }
 
-- (void)setPointX:(int)x andY:(int)y {
-    [self changeFreq:y];
+- (int)setPointX:(int)x andY:(int)y {
+    [self changeFreq:[self genFreq:y]];
     [self changeFactor:x];
+    return -1;
 }
 
 - (void) play{
