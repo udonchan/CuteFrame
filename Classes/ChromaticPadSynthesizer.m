@@ -11,12 +11,9 @@
     return (int)floor((480.0-p)/480 * (max_note - min_note)) + min_note;
 }
 
-- (int)setPointX:(int)x andY:(int)y{
+- (void)setPointX:(int)x andY:(int)y{
     [self changeFactor:x];
-    int note_number = [self point2note:y];
-    [self changeFreq:[self note2freq:note_number]];
-    return note_number;
-    
+    [self changeFreq:[self note2freq:current_note = [self point2note:y]]];
 }
 
 @end

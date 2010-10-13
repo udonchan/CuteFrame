@@ -33,6 +33,9 @@
 
 - (void) changeColor {
     if (isTouch) [v changeColor];
+#ifdef DEBUG
+    [dlv updateLabel];
+#endif
 }
 
 - (void)loadView {
