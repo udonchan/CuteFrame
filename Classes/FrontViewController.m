@@ -51,10 +51,20 @@
 - (id) init {
 	self = [super init];
     setting = [NSUserDefaults standardUserDefaults];
-    if ([[setting stringForKey:@"scale"]intValue] == SCALE_CHROMATIC)
-        ps = [[ChromaticPadSynthesizer alloc] init];
-    else
-        ps = [[PadSynthesizer alloc] init];
+    switch ([[setting stringForKey:@"scale"] intValue]) {
+        case SCALE_NONE:
+            ps = [[PadSynthesizer alloc] init];
+            break;
+        case SCALE_CHROMATIC:
+            ps = [[ChromaticPadSynthesizer alloc] init];
+            break;
+        case SCALE_DIATONIC:
+            ps = [[DiatonicPadSynthesizer alloc] init];
+            break;
+        default:
+            exit(EXIT_FAILURE);
+            break;
+    }
 	return self;
 }
 

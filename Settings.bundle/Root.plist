@@ -44,22 +44,70 @@
 		</dict>
 		<dict>
 			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Scale</string>
+		</dict>
+		<dict>
+			<key>Type</key>
 			<string>PSMultiValueSpecifier</string>
 			<key>Key</key>
 			<string>scale</string>
 			<key>Title</key>
-			<string>Scale</string>
+			<string>Type</string>
 			<key>DefaultValue</key>
 			<string></string>
 			<key>Values</key>
 			<array>
 				<string>0</string>
 				<string>1</string>
+				<string>2</string>
 			</array>
 			<key>Titles</key>
 			<array>
 				<string>None</string>
 				<string>chromatic</string>
+				<string>diatonic</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Key</key>
+			<string>key</string>
+			<key>Title</key>
+			<string>key</string>
+			<key>DefaultValue</key>
+			<string></string>
+			<key>Values</key>
+			<array>
+				<string>0</string>
+				<string>1</string>
+				<string>2</string>
+				<string>3</string>
+				<string>4</string>
+				<string>5</string>
+				<string>6</string>
+				<string>7</string>
+				<string>8</string>
+				<string>9</string>
+				<string>10</string>
+				<string>11</string>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>C</string>
+				<string>C#</string>
+				<string>D</string>
+				<string>D#</string>
+				<string>E</string>
+				<string>F</string>
+				<string>F#</string>
+				<string>G</string>
+				<string>G#</string>
+				<string>A</string>
+				<string>A#</string>
+				<string>B</string>
 			</array>
 		</dict>
 	</array>
