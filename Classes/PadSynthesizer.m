@@ -10,8 +10,9 @@
 
 -(id) init {
     [super init];
-    ro = [[RemoteOutput alloc] init];
     setting = [NSUserDefaults standardUserDefaults];
+    ro = [[RemoteOutput alloc] init];
+    ro.isPortamento = [[setting stringForKey:@"isPortamento"] intValue];
     max_note = (int)[[setting stringForKey:@"max_note"] floatValue];
     min_note = (int)[[setting stringForKey:@"min_note"] floatValue];
     if (max_note < 40 || 127 < max_note) max_note = 127;

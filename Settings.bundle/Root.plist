@@ -110,6 +110,26 @@
 				<string>B</string>
 			</array>
 		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Portamento</string>
+			<key>Key</key>
+			<string>isPortamento</string>
+			<key>TrueValue</key>
+			<string>1</string>
+			<key>FalseValue</key>
+			<string>0</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
 	</array>
 </dict>
 </plist>

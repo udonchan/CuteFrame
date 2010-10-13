@@ -27,8 +27,10 @@ static OSStatus renderCallback(void*                       inRefCon,
         AudioUnitSampleType sample = wave * (1 << kAudioUnitSampleFractionBits);
         *outL++ = sample;
         *outR++ = sample;
-        phase = phase + freqz;        
-        freqz = 0.001 * freq + 0.999 * freqz;
+        phase = phase + freqz;
+        if (def->isPortamento)
+            freqz = 0.001 * freq + 0.999 * freqz;
+        else freqz= freq;
     }
     def->freqz = freqz;
     def->phase = phase;
@@ -59,6 +61,14 @@ static OSStatus renderCallback(void*                       inRefCon,
 
 -(void)setFactor:(double)factor{
     cuteWaveDef.factor = factor;
+}
+
+- (int) isPortamento {
+    return isPortamento;
+}
+
+-(void)setIsPortamento:(int) i{
+    cuteWaveDef.isPortamento = i;
 }
 
 - (void)prepareAudioUnit{
