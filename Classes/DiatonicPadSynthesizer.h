@@ -10,6 +10,6 @@
     NSMutableArray *noteTable;
 }
 
-- (void) createNoteTable;
+- (void) createNoteTable:(NSArray *)baseTab;
 
 @end

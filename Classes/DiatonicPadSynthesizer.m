@@ -7,13 +7,13 @@
 
 @implementation DiatonicPadSynthesizer
 
-- (void) createNoteTable {
+
+- (void) createNoteTable:(NSArray *)baseTab {
     noteTable = [[NSMutableArray alloc] init];
-    int baseKeyTab[7] = {0, 2, 4, 5, 7, 9, 11};    
     int key = [[[NSUserDefaults standardUserDefaults] stringForKey:@"key"]intValue];
     for (int cur = min_note; cur <= max_note; cur++) {
-        for(int i = 0; i < 7; i++) {
-            if ((cur-key)%12 == baseKeyTab[i]){
+        for(int i = 0; i < [baseTab count]; i++) {
+            if ((cur-key)%12 == [[baseTab objectAtIndex:i]intValue]){
                 [noteTable addObject:[[NSNumber alloc]initWithInt:cur]];
                 break;
             }
@@ -22,12 +22,25 @@
 }    
     
 - (int) point2note:(int) p {
-    return [[noteTable objectAtIndex:(int)((480.0-p)/480 * [noteTable count])]intValue];
+    int idx = (int)((480.0-p)/480 * [noteTable count]);
+    if (idx > [noteTable count]-1) return [[noteTable lastObject]intValue];
+    if (idx < 1) return [[noteTable objectAtIndex:0]intValue];
+    return [[noteTable objectAtIndex:idx]intValue];
 }
 
 - (id) init {
     [super init];
-    [self createNoteTable];
+    NSArray* baseTab = [[NSArray alloc] initWithObjects:
+                        [[NSNumber alloc] initWithInt:0],
+                        [[NSNumber alloc] initWithInt:2],
+                        [[NSNumber alloc] initWithInt:4],
+                        [[NSNumber alloc] initWithInt:5],
+                        [[NSNumber alloc] initWithInt:7],
+                        [[NSNumber alloc] initWithInt:9],
+                        [[NSNumber alloc] initWithInt:11],
+                        nil];
+    [self createNoteTable:baseTab];
+    [baseTab release];
     return self;
 }
 
