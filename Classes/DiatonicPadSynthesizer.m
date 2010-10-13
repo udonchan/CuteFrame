@@ -19,13 +19,9 @@
             }
         }
     }
-    for (NSNumber* n in noteTable){
-        NSLog(@"%d ", [n intValue]);
-    }
 }    
     
 - (int) point2note:(int) p {
-    NSLog(@"%d", [[noteTable objectAtIndex:(int)((480.0-p)/480 * [noteTable count])]intValue]);
     return [[noteTable objectAtIndex:(int)((480.0-p)/480 * [noteTable count])]intValue];
 }
 
@@ -33,6 +29,11 @@
     [super init];
     [self createNoteTable];
     return self;
+}
+
+- (void) dealloc {
+    [super dealloc];
+    [noteTable release];
 }
 
 @end
