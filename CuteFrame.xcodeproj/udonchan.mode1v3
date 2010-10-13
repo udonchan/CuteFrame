@@ -278,14 +278,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>20</integer>
-									<integer>16</integer>
+									<integer>18</integer>
+									<integer>8</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {186, 664}}</string>
+							<string>{{0, 135}, {186, 664}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -322,7 +322,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>DebugLabelView.m</string>
+								<string>PentatonicPadSynthesizer.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,33 +330,39 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>DebugLabelView.m</string>
+										<string>PentatonicPadSynthesizer.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8C4627EA12648FA8003F7A0F</string>
+										<string>8C46291B12657240003F7A0F</string>
 										<key>history</key>
 										<array>
-											<string>8C77C2BE1263036200E274AA</string>
-											<string>8C46268512643A72003F7A0F</string>
 											<string>8C46279512645283003F7A0F</string>
 											<string>8C46279612645283003F7A0F</string>
-											<string>8C4627C412648C48003F7A0F</string>
-											<string>8C4627C512648C48003F7A0F</string>
-											<string>8C4627C612648C48003F7A0F</string>
-											<string>8C4627C712648C48003F7A0F</string>
-											<string>8C4627C812648C48003F7A0F</string>
-											<string>8C4627C912648C48003F7A0F</string>
-											<string>8C4627CA12648C48003F7A0F</string>
-											<string>8C4627CB12648C48003F7A0F</string>
-											<string>8C4627CC12648C48003F7A0F</string>
-											<string>8C4627CD12648C48003F7A0F</string>
-											<string>8C4627CE12648C48003F7A0F</string>
-											<string>8C4627D812648EFA003F7A0F</string>
-											<string>8C4627D912648EFA003F7A0F</string>
-											<string>8C4627E812648FA8003F7A0F</string>
-											<string>8C4627E912648FA8003F7A0F</string>
-											<string>8C4627E212648F10003F7A0F</string>
+											<string>8C4628251264A8AB003F7A0F</string>
+											<string>8C4628F912657171003F7A0F</string>
+											<string>8C4628FA12657171003F7A0F</string>
+											<string>8C4628FC12657171003F7A0F</string>
+											<string>8C4628FD12657171003F7A0F</string>
+											<string>8C46290012657171003F7A0F</string>
+											<string>8C46290112657171003F7A0F</string>
+											<string>8C46290312657171003F7A0F</string>
+											<string>8C46290412657171003F7A0F</string>
+											<string>8C46290512657171003F7A0F</string>
+											<string>8C46290612657171003F7A0F</string>
+											<string>8C46290712657171003F7A0F</string>
+											<string>8C46290812657171003F7A0F</string>
+											<string>8C46290B12657171003F7A0F</string>
+											<string>8C46290D12657171003F7A0F</string>
+											<string>8C46291212657240003F7A0F</string>
+											<string>8C46291312657240003F7A0F</string>
+											<string>8C46291412657240003F7A0F</string>
+											<string>8C46291512657240003F7A0F</string>
+											<string>8C46291612657240003F7A0F</string>
+											<string>8C46291712657240003F7A0F</string>
+											<string>8C46291812657240003F7A0F</string>
+											<string>8C46291912657240003F7A0F</string>
+											<string>8C46291A12657240003F7A0F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -578,14 +584,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PadSynthesizer.m</string>
+								<string>RemoteOutput.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -602,6 +606,8 @@
 							<string>440pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

@@ -10,11 +10,13 @@
 #import "PadSynthesizer.h"
 #import "ChromaticPadSynthesizer.h"
 #import "DiatonicPadSynthesizer.h"
+#import "PentatonicPadSynthesizer.h"
 #import "DebugLabelView.h"
 
-#define SCALE_NONE 0
-#define SCALE_CHROMATIC 1
-#define SCALE_DIATONIC 2
+#define SCALE_NONE       0
+#define SCALE_CHROMATIC  1
+#define SCALE_DIATONIC   2
+#define SCALE_PENTATONIC 3
 
 @interface FrontViewController : UIViewController {
     CuteView *v;

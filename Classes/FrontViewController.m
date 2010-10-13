@@ -61,6 +61,9 @@
         case SCALE_DIATONIC:
             ps = [[DiatonicPadSynthesizer alloc] init];
             break;
+        case SCALE_PENTATONIC:
+            ps = [[PentatonicPadSynthesizer alloc] init];
+            break;
         default:
             exit(EXIT_FAILURE);
             break;

@@ -62,12 +62,14 @@
 				<string>0</string>
 				<string>1</string>
 				<string>2</string>
+				<string>3</string>
 			</array>
 			<key>Titles</key>
 			<array>
 				<string>None</string>
 				<string>chromatic</string>
 				<string>diatonic</string>
+				<string>pentatonic</string>
 			</array>
 		</dict>
 		<dict>
