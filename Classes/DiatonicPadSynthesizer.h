@@ -4,12 +4,8 @@
 //
 
 
-#import "ChromaticPadSynthesizer.h"
+#import "AnyScalePadSynthesizer.h"
 
-@interface DiatonicPadSynthesizer : ChromaticPadSynthesizer {
-    NSMutableArray *noteTable;
+@interface DiatonicPadSynthesizer : AnyScalePadSynthesizer {
 }
-
-- (void) createNoteTable:(NSArray *)baseTab;
-
 @end
