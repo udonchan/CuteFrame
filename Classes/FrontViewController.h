@@ -9,8 +9,8 @@
 #import "CuteView.h"
 #import "PadSynthesizer.h"
 #import "ChromaticPadSynthesizer.h"
-#import "DiatonicPadSynthesizer.h"
-#import "PentatonicPadSynthesizer.h"
+#import "AnyScalePadSynthesizer.h"
+#import "ScaleArrays.h"
 #import "DebugLabelView.h"
 
 #define SCALE_NONE       0

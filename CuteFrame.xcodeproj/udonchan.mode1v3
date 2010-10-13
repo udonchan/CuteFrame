@@ -280,8 +280,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>26</integer>
-									<integer>22</integer>
+									<integer>16</integer>
+									<integer>8</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -324,7 +324,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>DebugLabelView.m</string>
+								<string>DiatonicPadSynthesizer.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,11 +332,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>DebugLabelView.m</string>
+										<string>DiatonicPadSynthesizer.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8C365DED12659384008BD17B</string>
+										<string>8C365E001265983C008BD17B</string>
 										<key>history</key>
 										<array>
 											<string>8C4628251264A8AB003F7A0F</string>
@@ -348,22 +348,22 @@
 											<string>8C365DD212659352008BD17B</string>
 											<string>8C365DD312659352008BD17B</string>
 											<string>8C365DD412659352008BD17B</string>
-											<string>8C365DD512659352008BD17B</string>
-											<string>8C365DD612659352008BD17B</string>
-											<string>8C365DD712659352008BD17B</string>
-											<string>8C365DD812659352008BD17B</string>
-											<string>8C365DD912659352008BD17B</string>
 											<string>8C365DDA12659352008BD17B</string>
 											<string>8C365DDB12659352008BD17B</string>
 											<string>8C365DDC12659352008BD17B</string>
 											<string>8C365DDD12659352008BD17B</string>
-											<string>8C365DDE12659352008BD17B</string>
 											<string>8C365DDF12659352008BD17B</string>
 											<string>8C365DE012659352008BD17B</string>
 											<string>8C365DE112659352008BD17B</string>
 											<string>8C365DE212659352008BD17B</string>
 											<string>8C365DE312659352008BD17B</string>
-											<string>8C365DE412659352008BD17B</string>
+											<string>8C365DF91265983C008BD17B</string>
+											<string>8C365DFA1265983C008BD17B</string>
+											<string>8C365DFB1265983C008BD17B</string>
+											<string>8C365DFC1265983C008BD17B</string>
+											<string>8C365DFD1265983C008BD17B</string>
+											<string>8C365DFE1265983C008BD17B</string>
+											<string>8C365DFF1265983C008BD17B</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -561,7 +561,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>8C365DEE12659384008BD17B</string>
 		<string>8C365DE712659352008BD17B</string>
 		<string>8C365DE812659352008BD17B</string>
 		<string>1CD10A99069EF8BA00B06720</string>

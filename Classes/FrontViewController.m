@@ -62,10 +62,10 @@
             ps = [[ChromaticPadSynthesizer alloc] init];
             break;
         case SCALE_DIATONIC:
-            ps = [[DiatonicPadSynthesizer alloc] init];
+            ps = [[AnyScalePadSynthesizer alloc] initWithScaleArray:DIATONIC_SCALE_ARRAY];
             break;
         case SCALE_PENTATONIC:
-            ps = [[PentatonicPadSynthesizer alloc] init];
+            ps = [[AnyScalePadSynthesizer alloc] initWithScaleArray:PENTATONIC_SCALE_ARRAY];
             break;
         default:
             exit(EXIT_FAILURE);

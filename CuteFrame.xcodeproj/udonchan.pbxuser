@@ -136,6 +136,17 @@
 			8C365DE412659352008BD17B /* PBXTextBookmark */ = 8C365DE412659352008BD17B /* PBXTextBookmark */;
 			8C365DE512659352008BD17B /* PBXTextBookmark */ = 8C365DE512659352008BD17B /* PBXTextBookmark */;
 			8C365DED12659384008BD17B /* PBXTextBookmark */ = 8C365DED12659384008BD17B /* PBXTextBookmark */;
+			8C365DF91265983C008BD17B /* PBXTextBookmark */ = 8C365DF91265983C008BD17B /* PBXTextBookmark */;
+			8C365DFA1265983C008BD17B /* PBXTextBookmark */ = 8C365DFA1265983C008BD17B /* PBXTextBookmark */;
+			8C365DFB1265983C008BD17B /* PBXTextBookmark */ = 8C365DFB1265983C008BD17B /* PBXTextBookmark */;
+			8C365DFC1265983C008BD17B /* PBXTextBookmark */ = 8C365DFC1265983C008BD17B /* PBXTextBookmark */;
+			8C365DFD1265983C008BD17B /* PBXTextBookmark */ = 8C365DFD1265983C008BD17B /* PBXTextBookmark */;
+			8C365DFE1265983C008BD17B /* PBXTextBookmark */ = 8C365DFE1265983C008BD17B /* PBXTextBookmark */;
+			8C365DFF1265983C008BD17B /* PBXTextBookmark */ = 8C365DFF1265983C008BD17B /* PBXTextBookmark */;
+			8C365E001265983C008BD17B /* PBXTextBookmark */ = 8C365E001265983C008BD17B /* PBXTextBookmark */;
+			8C365E091265A26C008BD17B /* PBXTextBookmark */ = 8C365E091265A26C008BD17B /* PBXTextBookmark */;
+			8C365E0A1265A26C008BD17B /* XCBuildMessageTextBookmark */ = 8C365E0A1265A26C008BD17B /* XCBuildMessageTextBookmark */;
+			8C365E0B1265A26C008BD17B /* PBXTextBookmark */ = 8C365E0B1265A26C008BD17B /* PBXTextBookmark */;
 			8C46260512630B44003F7A0F = 8C46260512630B44003F7A0F /* PBXTextBookmark */;
 			8C46263B12631286003F7A0F = 8C46263B12631286003F7A0F /* PlistBookmark */;
 			8C46263C12631286003F7A0F = 8C46263C12631286003F7A0F /* PlistBookmark */;
@@ -380,7 +391,7 @@
 	};
 	32CA4F630368D1EE00C91783 /* CuteFrame_Prefix.pch */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 645}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 620}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 187}";
 		};
@@ -521,7 +532,7 @@
 		fRef = 8C46282E1264A979003F7A0F /* DiatonicPadSynthesizer.h */;
 		name = "DiatonicPadSynthesizer.h: 9";
 		rLen = 0;
-		rLoc = 147;
+		rLoc = 152;
 		rType = 0;
 		vrLen = 155;
 		vrLoc = 0;
@@ -531,7 +542,7 @@
 		fRef = 8C4628F4126570AF003F7A0F /* AnyScalePadSynthesizer.m */;
 		name = "AnyScalePadSynthesizer.m: 25";
 		rLen = 0;
-		rLoc = 741;
+		rLoc = 885;
 		rType = 0;
 		vrLen = 966;
 		vrLoc = 0;
@@ -541,7 +552,7 @@
 		fRef = 8C4628F3126570AF003F7A0F /* AnyScalePadSynthesizer.h */;
 		name = "AnyScalePadSynthesizer.h: 14";
 		rLen = 0;
-		rLoc = 229;
+		rLoc = 275;
 		rType = 0;
 		vrLen = 235;
 		vrLoc = 0;
@@ -601,7 +612,7 @@
 		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
 		name = "FrontViewController.h: 13";
 		rLen = 0;
-		rLoc = 285;
+		rLoc = 272;
 		rType = 0;
 		vrLen = 659;
 		vrLoc = 0;
@@ -675,6 +686,122 @@
 		rType = 0;
 		vrLen = 1076;
 		vrLoc = 2111;
+	};
+	8C365DF91265983C008BD17B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C4627B512648A9B003F7A0F /* DebugLabelView.m */;
+		name = "DebugLabelView.m: 27";
+		rLen = 0;
+		rLoc = 525;
+		rType = 0;
+		vrLen = 1273;
+		vrLoc = 248;
+	};
+	8C365DFA1265983C008BD17B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C4628F11265705A003F7A0F /* PentatonicPadSynthesizer.m */;
+		name = "PentatonicPadSynthesizer.m: 14";
+		rLen = 0;
+		rLoc = 390;
+		rType = 0;
+		vrLen = 624;
+		vrLoc = 0;
+	};
+	8C365DFB1265983C008BD17B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C4628F3126570AF003F7A0F /* AnyScalePadSynthesizer.h */;
+		name = "AnyScalePadSynthesizer.h: 12";
+		rLen = 0;
+		rLoc = 184;
+		rType = 0;
+		vrLen = 235;
+		vrLoc = 0;
+	};
+	8C365DFC1265983C008BD17B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C4628F4126570AF003F7A0F /* AnyScalePadSynthesizer.m */;
+		name = "AnyScalePadSynthesizer.m: 25";
+		rLen = 0;
+		rLoc = 885;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	8C365DFD1265983C008BD17B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C4628F01265705A003F7A0F /* PentatonicPadSynthesizer.h */;
+		name = "PentatonicPadSynthesizer.h: 10";
+		rLen = 0;
+		rLoc = 153;
+		rType = 0;
+		vrLen = 159;
+		vrLoc = 0;
+	};
+	8C365DFE1265983C008BD17B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C46282E1264A979003F7A0F /* DiatonicPadSynthesizer.h */;
+		name = "DiatonicPadSynthesizer.h: 10";
+		rLen = 0;
+		rLoc = 151;
+		rType = 0;
+		vrLen = 160;
+		vrLoc = 0;
+	};
+	8C365DFF1265983C008BD17B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C46282F1264A979003F7A0F /* DiatonicPadSynthesizer.m */;
+		name = "DiatonicPadSynthesizer.m: 12";
+		rLen = 0;
+		rLoc = 652;
+		rType = 0;
+		vrLen = 242;
+		vrLoc = 0;
+	};
+	8C365E001265983C008BD17B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C46282F1264A979003F7A0F /* DiatonicPadSynthesizer.m */;
+		name = "DiatonicPadSynthesizer.m: 13";
+		rLen = 0;
+		rLoc = 215;
+		rType = 0;
+		vrLen = 736;
+		vrLoc = 0;
+	};
+	8C365E091265A26C008BD17B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C4627B512648A9B003F7A0F /* DebugLabelView.m */;
+		name = "DebugLabelView.m: 67";
+		rLen = 0;
+		rLoc = 2083;
+		rType = 0;
+		vrLen = 826;
+		vrLoc = 815;
+	};
+	8C365E0A1265A26C008BD17B /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected ']' before ';' token";
+		fRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 67;
+		rType = 1;
+	};
+	8C365E0B1265A26C008BD17B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */;
+		name = "FrontViewController.m: 76";
+		rLen = 0;
+		rLoc = 1945;
+		rType = 0;
+		vrLen = 1168;
+		vrLoc = 1664;
+	};
+	8C365E0C1265A296008BD17B /* ScaleArrays.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 620}}";
+			sepNavSelRange = "{606, 0}";
+			sepNavVisRange = "{0, 608}";
+		};
 	};
 	8C46260512630B44003F7A0F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -758,7 +885,7 @@
 		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
 		name = "FrontViewController.h: 17";
 		rLen = 0;
-		rLoc = 560;
+		rLoc = 547;
 		rType = 0;
 		vrLen = 489;
 		vrLoc = 0;
@@ -768,7 +895,7 @@
 		fRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */;
 		name = "FrontViewController.m: 98";
 		rLen = 0;
-		rLoc = 1911;
+		rLoc = 1981;
 		rType = 0;
 		vrLen = 627;
 		vrLoc = 1826;
@@ -843,7 +970,7 @@
 		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
 		name = "FrontViewController.h: 12";
 		rLen = 0;
-		rLoc = 421;
+		rLoc = 408;
 		rType = 0;
 		vrLen = 537;
 		vrLoc = 0;
@@ -853,7 +980,7 @@
 		fRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */;
 		name = "FrontViewController.m: 92";
 		rLen = 0;
-		rLoc = 1911;
+		rLoc = 1981;
 		rType = 0;
 		vrLen = 1301;
 		vrLoc = 183;
@@ -877,7 +1004,7 @@
 	};
 	8C46268F12643C62003F7A0F /* PadSynthesizer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 1116}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 1134}}";
 			sepNavSelRange = "{1225, 0}";
 			sepNavVisRange = "{775, 600}";
 		};
@@ -917,7 +1044,7 @@
 		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
 		name = "FrontViewController.h: 18";
 		rLen = 0;
-		rLoc = 513;
+		rLoc = 500;
 		rType = 0;
 		vrLen = 537;
 		vrLoc = 0;
@@ -1075,7 +1202,7 @@
 		fRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */;
 		name = "FrontViewController.m: 96";
 		rLen = 0;
-		rLoc = 1969;
+		rLoc = 2039;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 2453;
@@ -1095,7 +1222,7 @@
 		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
 		name = "FrontViewController.h: 23";
 		rLen = 0;
-		rLoc = 628;
+		rLoc = 615;
 		rType = 0;
 		vrLen = 588;
 		vrLoc = 0;
@@ -1113,7 +1240,7 @@
 		fRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */;
 		name = "FrontViewController.m: 96";
 		rLen = 0;
-		rLoc = 1969;
+		rLoc = 2039;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 2453;
@@ -1123,7 +1250,7 @@
 		fRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */;
 		name = "FrontViewController.m: 96";
 		rLen = 0;
-		rLoc = 1969;
+		rLoc = 2039;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 2453;
@@ -1171,7 +1298,7 @@
 		fRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */;
 		name = "FrontViewController.m: 96";
 		rLen = 0;
-		rLoc = 1969;
+		rLoc = 2039;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 2453;
@@ -1221,7 +1348,7 @@
 		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
 		name = "FrontViewController.h: 20";
 		rLen = 0;
-		rLoc = 560;
+		rLoc = 547;
 		rType = 0;
 		vrLen = 418;
 		vrLoc = 0;
@@ -1255,7 +1382,7 @@
 	};
 	8C46276712644EFF003F7A0F /* ChromaticPadSynthesizer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 597}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 620}}";
 			sepNavSelRange = "{374, 0}";
 			sepNavVisRange = "{0, 382}";
 		};
@@ -1265,7 +1392,7 @@
 		fRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */;
 		name = "FrontViewController.m: 71";
 		rLen = 0;
-		rLoc = 1969;
+		rLoc = 2039;
 		rType = 0;
 		vrLen = 1123;
 		vrLoc = 956;
@@ -1383,7 +1510,7 @@
 		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
 		name = "FrontViewController.h: 21";
 		rLen = 0;
-		rLoc = 574;
+		rLoc = 561;
 		rType = 0;
 		vrLen = 454;
 		vrLoc = 0;
@@ -1443,7 +1570,7 @@
 		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
 		name = "FrontViewController.h: 21";
 		rLen = 0;
-		rLoc = 574;
+		rLoc = 561;
 		rType = 0;
 		vrLen = 454;
 		vrLoc = 0;
@@ -1543,7 +1670,7 @@
 		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
 		name = "FrontViewController.h: 21";
 		rLen = 0;
-		rLoc = 574;
+		rLoc = 561;
 		rType = 0;
 		vrLen = 454;
 		vrLoc = 0;
@@ -1590,16 +1717,16 @@
 	};
 	8C4627B412648A9B003F7A0F /* DebugLabelView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 597}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 620}}";
 			sepNavSelRange = "{179, 0}";
 			sepNavVisRange = "{0, 301}";
 		};
 	};
 	8C4627B512648A9B003F7A0F /* DebugLabelView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 1746}}";
-			sepNavSelRange = "{2456, 0}";
-			sepNavVisRange = "{2111, 1076}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 1890}}";
+			sepNavSelRange = "{525, 0}";
+			sepNavVisRange = "{248, 1256}";
 		};
 	};
 	8C4627C312648C48003F7A0F /* PBXTextBookmark */ = {
@@ -1717,7 +1844,7 @@
 		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
 		name = "FrontViewController.h: 12";
 		rLen = 0;
-		rLoc = 312;
+		rLoc = 299;
 		rType = 0;
 		vrLen = 481;
 		vrLoc = 0;
@@ -1777,7 +1904,7 @@
 		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
 		name = "FrontViewController.h: 12";
 		rLen = 0;
-		rLoc = 312;
+		rLoc = 299;
 		rType = 0;
 		vrLen = 481;
 		vrLoc = 0;
@@ -2077,7 +2204,7 @@
 		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
 		name = "FrontViewController.h: 16";
 		rLen = 0;
-		rLoc = 421;
+		rLoc = 408;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 0;
@@ -2134,17 +2261,29 @@
 		vrLoc = 0;
 	};
 	8C46282E1264A979003F7A0F /* DiatonicPadSynthesizer.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = DiatonicPadSynthesizer.h;
+		path = /Users/udonchan/Documents/iphone/CuteFrame/Classes/DiatonicPadSynthesizer.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 645}}";
-			sepNavSelRange = "{147, 0}";
-			sepNavVisRange = "{0, 155}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 620}}";
+			sepNavSelRange = "{151, 0}";
+			sepNavVisRange = "{0, 160}";
 			sepNavWindowFrame = "{{19, 0}, {1223, 778}}";
 		};
 	};
 	8C46282F1264A979003F7A0F /* DiatonicPadSynthesizer.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = DiatonicPadSynthesizer.m;
+		path = /Users/udonchan/Documents/iphone/CuteFrame/Classes/DiatonicPadSynthesizer.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 645}}";
-			sepNavSelRange = "{126, 604}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 620}}";
+			sepNavSelRange = "{181, 470}";
 			sepNavVisRange = "{0, 736}";
 		};
 	};
@@ -2203,7 +2342,7 @@
 		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
 		name = "FrontViewController.h: 19";
 		rLen = 0;
-		rLoc = 423;
+		rLoc = 410;
 		rType = 0;
 		vrLen = 586;
 		vrLoc = 0;
@@ -2223,7 +2362,7 @@
 		fRef = 8C46282E1264A979003F7A0F /* DiatonicPadSynthesizer.h */;
 		name = "DiatonicPadSynthesizer.h: 10";
 		rLen = 0;
-		rLoc = 149;
+		rLoc = 154;
 		rType = 0;
 		vrLen = 155;
 		vrLoc = 0;
@@ -2253,7 +2392,7 @@
 		fRef = 8C46282E1264A979003F7A0F /* DiatonicPadSynthesizer.h */;
 		name = "DiatonicPadSynthesizer.h: 10";
 		rLen = 0;
-		rLoc = 149;
+		rLoc = 154;
 		rType = 0;
 		vrLen = 155;
 		vrLoc = 0;
@@ -2293,7 +2432,7 @@
 		fRef = 8C46282E1264A979003F7A0F /* DiatonicPadSynthesizer.h */;
 		name = "DiatonicPadSynthesizer.h: 14";
 		rLen = 0;
-		rLoc = 149;
+		rLoc = 154;
 		rType = 0;
 		vrLen = 155;
 		vrLoc = 0;
@@ -2373,7 +2512,7 @@
 		fRef = 8C46282E1264A979003F7A0F /* DiatonicPadSynthesizer.h */;
 		name = "DiatonicPadSynthesizer.h: 13";
 		rLen = 0;
-		rLoc = 149;
+		rLoc = 154;
 		rType = 0;
 		vrLen = 155;
 		vrLoc = 0;
@@ -2403,7 +2542,7 @@
 		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
 		name = "FrontViewController.h: 19";
 		rLen = 0;
-		rLoc = 423;
+		rLoc = 410;
 		rType = 0;
 		vrLen = 586;
 		vrLoc = 0;
@@ -2423,7 +2562,7 @@
 		fRef = 8C46282E1264A979003F7A0F /* DiatonicPadSynthesizer.h */;
 		name = "DiatonicPadSynthesizer.h: 13";
 		rLen = 0;
-		rLoc = 149;
+		rLoc = 154;
 		rType = 0;
 		vrLen = 155;
 		vrLoc = 0;
@@ -2523,31 +2662,43 @@
 		vrLoc = 121;
 	};
 	8C4628F01265705A003F7A0F /* PentatonicPadSynthesizer.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = PentatonicPadSynthesizer.h;
+		path = /Users/udonchan/Documents/iphone/CuteFrame/Classes/PentatonicPadSynthesizer.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 645}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 620}}";
 			sepNavSelRange = "{153, 0}";
 			sepNavVisRange = "{0, 159}";
 		};
 	};
 	8C4628F11265705A003F7A0F /* PentatonicPadSynthesizer.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = PentatonicPadSynthesizer.m;
+		path = /Users/udonchan/Documents/iphone/CuteFrame/Classes/PentatonicPadSynthesizer.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 597}}";
-			sepNavSelRange = "{390, 0}";
-			sepNavVisRange = "{0, 624}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 620}}";
+			sepNavSelRange = "{186, 0}";
+			sepNavVisRange = "{0, 271}";
 		};
 	};
 	8C4628F3126570AF003F7A0F /* AnyScalePadSynthesizer.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 645}}";
-			sepNavSelRange = "{229, 0}";
-			sepNavVisRange = "{0, 235}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 620}}";
+			sepNavSelRange = "{184, 0}";
+			sepNavVisRange = "{0, 281}";
 		};
 	};
 	8C4628F4126570AF003F7A0F /* AnyScalePadSynthesizer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 648}}";
-			sepNavSelRange = "{741, 0}";
-			sepNavVisRange = "{0, 966}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 756}}";
+			sepNavSelRange = "{172, 0}";
+			sepNavVisRange = "{0, 1036}";
 		};
 	};
 	8C4628F912657171003F7A0F /* PBXTextBookmark */ = {
@@ -2575,7 +2726,7 @@
 		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
 		name = "FrontViewController.h: 19";
 		rLen = 0;
-		rLoc = 423;
+		rLoc = 410;
 		rType = 0;
 		vrLen = 586;
 		vrLoc = 0;
@@ -2727,7 +2878,7 @@
 		fRef = 8C4628F3126570AF003F7A0F /* AnyScalePadSynthesizer.h */;
 		name = "AnyScalePadSynthesizer.h: 14";
 		rLen = 0;
-		rLoc = 229;
+		rLoc = 275;
 		rType = 0;
 		vrLen = 235;
 		vrLoc = 0;
@@ -2737,7 +2888,7 @@
 		fRef = 8C46282F1264A979003F7A0F /* DiatonicPadSynthesizer.m */;
 		name = "DiatonicPadSynthesizer.m: 13";
 		rLen = 0;
-		rLoc = 221;
+		rLoc = 652;
 		rType = 0;
 		vrLen = 736;
 		vrLoc = 0;
@@ -2747,7 +2898,7 @@
 		fRef = 8C46282E1264A979003F7A0F /* DiatonicPadSynthesizer.h */;
 		name = "DiatonicPadSynthesizer.h: 9";
 		rLen = 0;
-		rLoc = 147;
+		rLoc = 152;
 		rType = 0;
 		vrLen = 155;
 		vrLoc = 0;
@@ -2757,7 +2908,7 @@
 		fRef = 8C4628F4126570AF003F7A0F /* AnyScalePadSynthesizer.m */;
 		name = "AnyScalePadSynthesizer.m: 27";
 		rLen = 0;
-		rLoc = 849;
+		rLoc = 993;
 		rType = 0;
 		vrLen = 966;
 		vrLoc = 0;
@@ -2767,7 +2918,7 @@
 		fRef = 8C4628F4126570AF003F7A0F /* AnyScalePadSynthesizer.m */;
 		name = "AnyScalePadSynthesizer.m: 27";
 		rLen = 0;
-		rLoc = 849;
+		rLoc = 993;
 		rType = 0;
 		vrLen = 966;
 		vrLoc = 0;
@@ -2777,7 +2928,7 @@
 		fRef = 8C4628F4126570AF003F7A0F /* AnyScalePadSynthesizer.m */;
 		name = "AnyScalePadSynthesizer.m: 27";
 		rLen = 0;
-		rLoc = 849;
+		rLoc = 993;
 		rType = 0;
 		vrLen = 966;
 		vrLoc = 0;
@@ -2818,7 +2969,7 @@
 		fRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */;
 		name = "FrontViewController.m: 66";
 		rLen = 0;
-		rLoc = 1894;
+		rLoc = 1964;
 		rType = 0;
 		vrLen = 967;
 		vrLoc = 959;
@@ -2828,7 +2979,7 @@
 		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
 		name = "FrontViewController.h: 13";
 		rLen = 0;
-		rLoc = 285;
+		rLoc = 272;
 		rType = 0;
 		vrLen = 659;
 		vrLoc = 0;
@@ -2937,7 +3088,7 @@
 		fRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */;
 		name = "FrontViewController.m: 85";
 		rLen = 0;
-		rLoc = 1911;
+		rLoc = 1981;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 2453;
@@ -2959,7 +3110,7 @@
 		fRef = 8CBEF285125D63E90058EA44 /* FrontViewController.h */;
 		name = "FrontViewController.h: 20";
 		rLen = 0;
-		rLoc = 560;
+		rLoc = 547;
 		rType = 0;
 		vrLen = 463;
 		vrLoc = 0;
@@ -2976,7 +3127,7 @@
 	};
 	8CA49FE9125FEDB30045D85B /* CuteView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 597}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 620}}";
 			sepNavSelRange = "{129, 0}";
 			sepNavVisRange = "{0, 157}";
 		};
@@ -2985,7 +3136,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1007, 666}}";
 			sepNavSelRange = "{686, 0}";
-			sepNavVisRange = "{0, 689}";
+			sepNavVisRange = "{0, 690}";
 		};
 	};
 	8CA4A0AC1262E6730045D85B /* PBXTextBookmark */ = {
@@ -3083,17 +3234,17 @@
 	};
 	8CBEF285125D63E90058EA44 /* FrontViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 612}}";
-			sepNavSelRange = "{285, 0}";
-			sepNavVisRange = "{0, 659}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 620}}";
+			sepNavSelRange = "{273, 0}";
+			sepNavVisRange = "{0, 646}";
 			sepNavWindowFrame = "{{19, 0}, {1223, 778}}";
 		};
 	};
 	8CBEF286125D63E90058EA44 /* FrontViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 1782}}";
-			sepNavSelRange = "{994, 0}";
-			sepNavVisRange = "{511, 841}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 1728}}";
+			sepNavSelRange = "{1852, 0}";
+			sepNavVisRange = "{1305, 1098}";
 			sepNavWindowFrame = "{{19, 0}, {1223, 778}}";
 		};
 	};

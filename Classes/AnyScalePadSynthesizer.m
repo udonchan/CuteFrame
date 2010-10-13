@@ -7,6 +7,13 @@
 
 @implementation AnyScalePadSynthesizer
 
+- (id) initWithScaleArray:(NSArray *)baseTab {
+    [super init];
+    [self createNoteTable:baseTab];
+    [baseTab release];
+    return self;
+}
+
 - (void) createNoteTable:(NSArray *)baseTab {
     noteTable = [[NSMutableArray alloc] init];
     int key = [[[NSUserDefaults standardUserDefaults] stringForKey:@"key"] intValue];
