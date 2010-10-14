@@ -17,6 +17,9 @@
 #define SCALE_CHROMATIC  1
 #define SCALE_DIATONIC   2
 #define SCALE_PENTATONIC 3
+#define SCALE_ARABIC     4
+#define SCALE_SPANISH    5
+#define SCALE_RYUKYU     6
 
 @interface FrontViewController : UIViewController {
     CuteView *v;

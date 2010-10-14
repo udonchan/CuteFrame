@@ -63,6 +63,9 @@
 				<string>1</string>
 				<string>2</string>
 				<string>3</string>
+				<string>4</string>
+				<string>5</string>
+				<string>6</string>
 			</array>
 			<key>Titles</key>
 			<array>
@@ -70,6 +73,9 @@
 				<string>chromatic</string>
 				<string>diatonic</string>
 				<string>pentatonic</string>
+				<string>arabic</string>
+				<string>spanish</string>
+				<string>ryu-kyu</string>
 			</array>
 		</dict>
 		<dict>

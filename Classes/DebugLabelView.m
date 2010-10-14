@@ -17,6 +17,10 @@
             return @"diatonic";
         case 3:
             return @"pentatonic";
+        case 4:
+            return @"arabic";
+        case 5:
+            return @"spanish";
         default:
             return @"unkonown";
     }

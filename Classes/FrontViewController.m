@@ -67,6 +67,15 @@
         case SCALE_PENTATONIC:
             ps = [[AnyScalePadSynthesizer alloc] initWithScaleArray:PENTATONIC_SCALE_ARRAY];
             break;
+        case SCALE_ARABIC:
+            ps = [[AnyScalePadSynthesizer alloc] initWithScaleArray:ARABIC_SCALE_ARRAY];
+            break;
+        case SCALE_SPANISH:
+            ps = [[AnyScalePadSynthesizer alloc] initWithScaleArray:SPANISH_SCALE_ARRAY];
+            break;
+        case SCALE_RYUKYU:
+            ps = [[AnyScalePadSynthesizer alloc] initWithScaleArray:RYUKYU_SCALE_ARRAY];
+            break;
         default:
             exit(EXIT_FAILURE);
             break;
