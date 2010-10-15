@@ -48,6 +48,7 @@ static OSStatus renderCallback(void*                       inRefCon,
 - (void)accelerometer:(UIAccelerometer *)accelerometer 
         didAccelerate:(UIAcceleration *)acceleration{
     vib_rate = [self vibrato_rate_max] * (acceleration.y > 0 ? acceleration.y : -acceleration.y);
+    lfo.frequency = (acceleration.x + 1.0) * 8;
 }
 - (id)init{
     self = [super init];
