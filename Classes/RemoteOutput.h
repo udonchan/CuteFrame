@@ -3,6 +3,7 @@
 //  RemoteIO
 //
 
+#import <UIKit/UIKit.h>
 #import <AudioUnit/AudioUnit.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import "SineWaveLFO.h"
@@ -16,13 +17,14 @@ typedef struct CuteWaveDef {
     int isPortamento;
 } CuteWaveDef;
 
-@interface RemoteOutput : NSObject <LFODelegate>{
+@interface RemoteOutput : NSObject <UIAccelerometerDelegate, LFODelegate>{
     AudioUnit audioUnit;    
     BOOL isPlaying;
     int isPortamento;
     CuteWaveDef cuteWaveDef;
     AbstractLFO *lfo;
     double _frequency;
+    double vib_rate;
 }
 
 @property (nonatomic) double frequency;

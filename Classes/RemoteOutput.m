@@ -37,10 +37,18 @@ static OSStatus renderCallback(void*                       inRefCon,
     return noErr;
 }
 
-- (void) changed_LFO_value:(double)_v {
-    cuteWaveDef.frequency = (_frequency + _v * _frequency / 50) * 2.0 * M_PI / cuteWaveDef.sampleRate;
+- (double) vibrato_rate_max {
+    return _frequency / 40;
 }
 
+- (void) changed_LFO_value:(double)_v {
+    cuteWaveDef.frequency = (_frequency + _v * vib_rate) * 2.0 * M_PI / cuteWaveDef.sampleRate;
+}
+
+- (void)accelerometer:(UIAccelerometer *)accelerometer 
+        didAccelerate:(UIAcceleration *)acceleration{
+    vib_rate = [self vibrato_rate_max] * (acceleration.y > 0 ? acceleration.y : -acceleration.y);
+}
 - (id)init{
     self = [super init];
     if (self != nil)[self prepareAudioUnit];
@@ -49,6 +57,9 @@ static OSStatus renderCallback(void*                       inRefCon,
         lfo.delegate = self;
         lfo.frequency = 10;
     }
+    UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
+    accelerometer.updateInterval = 1.0 / 60.0;
+    accelerometer.delegate = self;
     return self;
 }
 
