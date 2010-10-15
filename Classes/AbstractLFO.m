@@ -6,12 +6,12 @@
 #import "AbstractLFO.h"
 
 @implementation AbstractLFO 
-@synthesize delegate, frequency;
+@synthesize delegate, frequency, value;
 
 - (void) refresh {
     cur += REFRESH_RATE * frequency;
     if (delegate != nil)
-        [delegate changed_LFO_value:[self wavFunc:(cur * M_PI)]];
+        [delegate changed_LFO_value:value = [self wavFunc:(cur * M_PI)]];
 }
 
 - (double) wavFunc:(float)f {

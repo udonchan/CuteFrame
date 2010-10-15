@@ -6,6 +6,7 @@
 #import "RemoteOutput.h"
 
 @implementation RemoteOutput
+@synthesize lfo;
 
 static OSStatus renderCallback(void*                       inRefCon,
                                AudioUnitRenderActionFlags* ioActionFlags,
@@ -57,10 +58,10 @@ static OSStatus renderCallback(void*                       inRefCon,
         lfo = [[SineWaveLFO alloc] init];
         lfo.delegate = self;
         lfo.frequency = 10;
+        UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
+        accelerometer.updateInterval = 1.0 / 60.0;
+        accelerometer.delegate = self;
     }
-    UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
-    accelerometer.updateInterval = 1.0 / 60.0;
-    accelerometer.delegate = self;
     return self;
 }
 

@@ -10,6 +10,7 @@
     PadSynthesizer *_p;
     NSUserDefaults *_s;
     NSString *format;
+    UIView *lfo_view;
 }
 
 - (void) updateLabel;

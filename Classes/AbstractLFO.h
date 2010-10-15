@@ -10,8 +10,10 @@
     NSTimer *timer;
     double frequency;
     double cur;
+    double value;
     id<LFODelegate> delegate;
 }
+@property (assign, readonly) double value;
 @property (assign) double frequency;
 @property (assign) id<LFODelegate> delegate;
 

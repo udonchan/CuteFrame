@@ -69,20 +69,18 @@
                    [[_s stringForKey:@"isPortamento"] intValue],
                    [self note_number2String:_p.current_note],
                    [_p.ro currentFrequency]
-                   ]];    
+//                   [_p.ro.lfo value]
+                   ]];
+    [lfo_view setBackgroundColor:[UIColor colorWithRed:([_p.ro.lfo value] >= 0 ? [_p.ro.lfo value] : 0) green:0 blue:([_p.ro.lfo value] < 0 ? -[_p.ro.lfo value] : 0) alpha:1.0]];
 }
 
 - (id) initWith:(PadSynthesizer *)p andSetting:(NSUserDefaults *)s{
     _p = p; _s = s;
     format = @"DEBUG\n"
-    "max_note : %d \t"
-    "max_freq : %d \n"
-    "min_note : %d \t"
-    "min_freq : %d \n"
-    "scale_mode\t : %@\t"
-    "portament : %d\n"
-    "note : %@\t"
-    "freq : %lf";
+    "max_note : %d  max_freq  : %d \n"
+    "min_note : %d  min_freq  : %d \n"
+    "scale_mode : %@  portament : %d\n"
+    "note : %@  freq : %lf lfo : ";
     UIFont *font = [UIFont fontWithName:@"Courier new" size:12];
     self = [self initWithFrame:CGRectMake(0, 0, 320, [[NSString stringWithFormat:@"%@\n", format]
                                                       sizeWithFont:font
@@ -94,6 +92,9 @@
     [self setTextColor:[UIColor whiteColor]];
     [self setNumberOfLines:0];
     [self setLineBreakMode:UILineBreakModeWordWrap];
+    lfo_view = [[UIView alloc] initWithFrame:CGRectMake(255, 58, 9, 9)];
+    [lfo_view setBackgroundColor:[UIColor redColor]];
+    [self addSubview:lfo_view];
     return self;
 }
 

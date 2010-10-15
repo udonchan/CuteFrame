@@ -27,6 +27,7 @@ typedef struct CuteWaveDef {
     double vib_rate;
 }
 
+@property (nonatomic, retain, readonly) AbstractLFO *lfo;
 @property (nonatomic) double frequency;
 @property (nonatomic) double factor;
 @property (assign) int isPortamento;
