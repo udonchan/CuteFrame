@@ -99,7 +99,6 @@
 
 - (void)dealloc {
     [super dealloc];
-    [setting release];
     [v release];
 }
 

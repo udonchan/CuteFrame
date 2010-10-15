@@ -68,7 +68,7 @@
                    [self scale_name:[[_s stringForKey:@"scale"] intValue]],
                    [[_s stringForKey:@"isPortamento"] intValue],
                    [self note_number2String:_p.current_note],
-                   _p.ro.frequency
+                   [_p.ro currentFrequency]
                    ]];    
 }
 

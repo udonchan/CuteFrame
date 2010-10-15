@@ -37,9 +37,18 @@ static OSStatus renderCallback(void*                       inRefCon,
     return noErr;
 }
 
+- (void) changed_LFO_value:(double)_v {
+    cuteWaveDef.frequency = (_frequency + _v * _frequency / 50) * 2.0 * M_PI / cuteWaveDef.sampleRate;
+}
+
 - (id)init{
     self = [super init];
     if (self != nil)[self prepareAudioUnit];
+    if ([[[NSUserDefaults standardUserDefaults] stringForKey:@"isVibrato"] boolValue]) {
+        lfo = [[SineWaveLFO alloc] init];
+        lfo.delegate = self;
+        lfo.frequency = 10;
+    }
     return self;
 }
 
@@ -47,12 +56,17 @@ static OSStatus renderCallback(void*                       inRefCon,
     return isPlaying;
 }
 
--(double)frequency{
+- (double) currentFrequency {
     return cuteWaveDef.frequency / (2.0 * M_PI) * cuteWaveDef.sampleRate;
 }
 
+- (double)frequency {
+    return _frequency;
+}
+
 -(void)setFrequency:(double)frequency{
-    cuteWaveDef.frequency = frequency * 2.0 * M_PI / cuteWaveDef.sampleRate;
+    _frequency = frequency;
+    cuteWaveDef.frequency = _frequency * 2.0 * M_PI / cuteWaveDef.sampleRate;
 }
 
 -(double)factor{

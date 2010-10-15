@@ -27,7 +27,6 @@
 - (void) dealloc {
     [super dealloc];
     [ro release];
-    [setting release];
 }
 
 - (void) changeFreq:(double) freq {

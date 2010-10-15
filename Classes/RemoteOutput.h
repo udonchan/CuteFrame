@@ -5,6 +5,7 @@
 
 #import <AudioUnit/AudioUnit.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import "SineWaveLFO.h"
 
 typedef struct CuteWaveDef {
     double phase;
@@ -15,18 +16,22 @@ typedef struct CuteWaveDef {
     int isPortamento;
 } CuteWaveDef;
 
-@interface RemoteOutput : NSObject {
+@interface RemoteOutput : NSObject <LFODelegate>{
     AudioUnit audioUnit;    
     BOOL isPlaying;
     int isPortamento;
     CuteWaveDef cuteWaveDef;
+    AbstractLFO *lfo;
+    double _frequency;
 }
 
-@property(nonatomic) double frequency;
-@property(nonatomic) double factor;
-@property(assign) int isPortamento;
+@property (nonatomic) double frequency;
+@property (nonatomic) double factor;
+@property (assign) int isPortamento;
 
--(void)play;
--(void)stop;
-- (void)prepareAudioUnit;
+- (double) currentFrequency;
+- (void) changed_LFO_value:(double)_v;
+- (void) play;
+- (void) stop;
+- (void) prepareAudioUnit;
 @end

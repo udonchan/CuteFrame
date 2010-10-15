@@ -136,6 +136,20 @@
 			<key>FalseValue</key>
 			<string>0</string>
 			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>vibrato</string>
+			<key>Key</key>
+			<string>isVibrato</string>
+			<key>TrueValue</key>
+			<string>1</string>
+			<key>FalseValue</key>
+			<string>0</string>
+			<key>DefaultValue</key>
 			<false/>
 		</dict>
 	</array>
