@@ -80,7 +80,7 @@
     "max_note : %d  max_freq  : %d \n"
     "min_note : %d  min_freq  : %d \n"
     "scale_mode : %@  portament : %d\n"
-    "note : %@  freq : %lf lfo : ";
+    "note : %@  freq : %.5lf lfo : ";
     UIFont *font = [UIFont fontWithName:@"Courier new" size:12];
     self = [self initWithFrame:CGRectMake(0, 0, 320, [[NSString stringWithFormat:@"%@\n", format]
                                                       sizeWithFont:font

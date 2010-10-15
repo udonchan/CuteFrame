@@ -18,12 +18,14 @@
 		8C212C5E125F2A3A0071F500 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C212C5D125F2A3A0071F500 /* icon.png */; };
 		8C36610812672DA6008BD17B /* SineWaveLFO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C36610712672DA6008BD17B /* SineWaveLFO.m */; };
 		8C36610B12672EBC008BD17B /* AbstractLFO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C36610A12672EBC008BD17B /* AbstractLFO.m */; };
+		8C3663A712682712008BD17B /* SquareWaveLFO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3663A612682712008BD17B /* SquareWaveLFO.m */; };
+		8C3663B012682848008BD17B /* RandomLFO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3663AF12682848008BD17B /* RandomLFO.m */; };
+		8C36646712684A56008BD17B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8C36646612684A56008BD17B /* Settings.bundle */; };
 		8C46269012643C62003F7A0F /* PadSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C46268F12643C62003F7A0F /* PadSynthesizer.m */; };
 		8C46276812644EFF003F7A0F /* ChromaticPadSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C46276712644EFF003F7A0F /* ChromaticPadSynthesizer.m */; };
 		8C4627B612648A9B003F7A0F /* DebugLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4627B512648A9B003F7A0F /* DebugLabelView.m */; };
 		8C4628F5126570AF003F7A0F /* AnyScalePadSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4628F4126570AF003F7A0F /* AnyScalePadSynthesizer.m */; };
 		8CA49FEB125FEDB30045D85B /* CuteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA49FEA125FEDB30045D85B /* CuteView.m */; };
-		8CA4A0841262DF660045D85B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8CA4A0831262DF660045D85B /* Settings.bundle */; };
 		8CBEF287125D63E90058EA44 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,11 @@
 		8C36610912672EBC008BD17B /* AbstractLFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractLFO.h; sourceTree = "<group>"; };
 		8C36610A12672EBC008BD17B /* AbstractLFO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractLFO.m; sourceTree = "<group>"; };
 		8C3661D61267462E008BD17B /* LFODelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFODelegate.h; sourceTree = "<group>"; };
+		8C3663A512682712008BD17B /* SquareWaveLFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareWaveLFO.h; sourceTree = "<group>"; };
+		8C3663A612682712008BD17B /* SquareWaveLFO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareWaveLFO.m; sourceTree = "<group>"; };
+		8C3663AE12682848008BD17B /* RandomLFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomLFO.h; sourceTree = "<group>"; };
+		8C3663AF12682848008BD17B /* RandomLFO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomLFO.m; sourceTree = "<group>"; };
+		8C36646612684A56008BD17B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		8C46268E12643C62003F7A0F /* PadSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PadSynthesizer.h; sourceTree = "<group>"; };
 		8C46268F12643C62003F7A0F /* PadSynthesizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PadSynthesizer.m; sourceTree = "<group>"; };
 		8C46276612644EFF003F7A0F /* ChromaticPadSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChromaticPadSynthesizer.h; sourceTree = "<group>"; };
@@ -57,7 +64,6 @@
 		8C4628F4126570AF003F7A0F /* AnyScalePadSynthesizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnyScalePadSynthesizer.m; sourceTree = "<group>"; };
 		8CA49FE9125FEDB30045D85B /* CuteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CuteView.h; sourceTree = "<group>"; };
 		8CA49FEA125FEDB30045D85B /* CuteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CuteView.m; sourceTree = "<group>"; };
-		8CA4A0831262DF660045D85B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		8CBEF285125D63E90058EA44 /* FrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontViewController.h; sourceTree = "<group>"; };
 		8CBEF286125D63E90058EA44 /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontViewController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* CuteFrame-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CuteFrame-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -81,8 +87,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8C36610312672D7D008BD17B /* LFO */,
 				8CA49FF7125FEDFE0045D85B /* app */,
+				8C36610312672D7D008BD17B /* LFO */,
 				8CA49FF6125FEDF20045D85B /* Synthesizer */,
 				8C46279112645259003F7A0F /* PadSynthesizer */,
 				8C365E0212659946008BD17B /* Scales */,
@@ -124,10 +130,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8C36646612684A56008BD17B /* Settings.bundle */,
 				8C212C5D125F2A3A0071F500 /* icon.png */,
 				8C212C59125F27D80071F500 /* Default.png */,
 				8D1107310486CEB800E47090 /* CuteFrame-Info.plist */,
-				8CA4A0831262DF660045D85B /* Settings.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -159,6 +165,10 @@
 				8C36610A12672EBC008BD17B /* AbstractLFO.m */,
 				8C36610612672DA6008BD17B /* SineWaveLFO.h */,
 				8C36610712672DA6008BD17B /* SineWaveLFO.m */,
+				8C3663A512682712008BD17B /* SquareWaveLFO.h */,
+				8C3663A612682712008BD17B /* SquareWaveLFO.m */,
+				8C3663AE12682848008BD17B /* RandomLFO.h */,
+				8C3663AF12682848008BD17B /* RandomLFO.m */,
 			);
 			name = LFO;
 			sourceTree = "<group>";
@@ -258,7 +268,7 @@
 			files = (
 				8C212C5A125F27D80071F500 /* Default.png in Resources */,
 				8C212C5E125F2A3A0071F500 /* icon.png in Resources */,
-				8CA4A0841262DF660045D85B /* Settings.bundle in Resources */,
+				8C36646712684A56008BD17B /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +290,8 @@
 				8C4628F5126570AF003F7A0F /* AnyScalePadSynthesizer.m in Sources */,
 				8C36610812672DA6008BD17B /* SineWaveLFO.m in Sources */,
 				8C36610B12672EBC008BD17B /* AbstractLFO.m in Sources */,
+				8C3663A712682712008BD17B /* SquareWaveLFO.m in Sources */,
+				8C3663B012682848008BD17B /* RandomLFO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

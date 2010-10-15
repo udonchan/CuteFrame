@@ -38,29 +38,33 @@ static OSStatus renderCallback(void*                       inRefCon,
     return noErr;
 }
 
-- (double) vibrato_rate_max {
-    return _frequency / 40;
-}
-
 - (void) changed_LFO_value:(double)_v {
-    cuteWaveDef.frequency = (_frequency + _v * vib_rate) * 2.0 * M_PI / cuteWaveDef.sampleRate;
+    cuteWaveDef.frequency = (_frequency + _v * vib_rate * _frequency) * 2.0 * M_PI / cuteWaveDef.sampleRate;
 }
 
 - (void)accelerometer:(UIAccelerometer *)accelerometer 
         didAccelerate:(UIAcceleration *)acceleration{
-    vib_rate = [self vibrato_rate_max] * (acceleration.y > 0 ? acceleration.y : -acceleration.y);
-    lfo.frequency = (acceleration.x + 1.0) * 8;
+    vib_rate = default_vib_rate * (acceleration.y > 0 ? acceleration.y : -acceleration.y);
+    lfo.frequency = [[[NSUserDefaults standardUserDefaults] stringForKey:@"vib_freq"] floatValue] * (acceleration.x + 1.0) / 2 ;
 }
 - (id)init{
     self = [super init];
     if (self != nil)[self prepareAudioUnit];
     if ([[[NSUserDefaults standardUserDefaults] stringForKey:@"isVibrato"] boolValue]) {
-        lfo = [[SineWaveLFO alloc] init];
+        switch ([[[NSUserDefaults standardUserDefaults] stringForKey:@"lfo_type"] intValue]) {
+            case 1:
+                lfo = [[SquareWaveLFO alloc] init];
+                break;
+            case 2:
+                lfo = [[RandomLFO alloc] init];
+                break;
+            default:
+                lfo = [[SineWaveLFO alloc] init];
+                break;
+        }
         lfo.delegate = self;
-        lfo.frequency = 10;
-        UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
-        accelerometer.updateInterval = 1.0 / 60.0;
-        accelerometer.delegate = self;
+        lfo.frequency = [[[NSUserDefaults standardUserDefaults] stringForKey:@"vib_freq"] floatValue];
+        default_vib_rate = vib_rate = [[[NSUserDefaults standardUserDefaults] stringForKey:@"vib_rate"] floatValue] / 1000;
     }
     return self;
 }

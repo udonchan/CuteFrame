@@ -13,6 +13,11 @@
     setting = [NSUserDefaults standardUserDefaults];
     ro = [[RemoteOutput alloc] init];
     ro.isPortamento = [[setting stringForKey:@"isPortamento"] intValue];
+    if ([[[NSUserDefaults standardUserDefaults] stringForKey:@"useAccelerometer"] boolValue]){
+        UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
+        accelerometer.updateInterval = 1.0 / 60.0;
+        accelerometer.delegate = ro;
+    }
     max_note = (int)[[setting stringForKey:@"max_note"] floatValue];
     min_note = (int)[[setting stringForKey:@"min_note"] floatValue];
     if (max_note < 40 || 127 < max_note) max_note = 127;

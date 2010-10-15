@@ -7,6 +7,8 @@
 #import <AudioUnit/AudioUnit.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import "SineWaveLFO.h"
+#import "SquareWaveLFO.h"
+#import "RandomLFO.h"
 
 typedef struct CuteWaveDef {
     double phase;
@@ -24,6 +26,7 @@ typedef struct CuteWaveDef {
     CuteWaveDef cuteWaveDef;
     AbstractLFO *lfo;
     double _frequency;
+    double default_vib_rate;
     double vib_rate;
 }
 
