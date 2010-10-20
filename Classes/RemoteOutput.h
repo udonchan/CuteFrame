@@ -6,6 +6,7 @@
 #import <UIKit/UIKit.h>
 #import <AudioUnit/AudioUnit.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import "iPhoneCoreAudio.h";
 #import "SineWaveLFO.h"
 #import "SquareWaveLFO.h"
 #import "RandomLFO.h"

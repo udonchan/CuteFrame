@@ -47,6 +47,7 @@ static OSStatus renderCallback(void*                       inRefCon,
     vib_rate = default_vib_rate * (acceleration.y > 0 ? acceleration.y : -acceleration.y);
     lfo.frequency = [[[NSUserDefaults standardUserDefaults] stringForKey:@"vib_freq"] floatValue] * (acceleration.x + 1.0) / 2 ;
 }
+
 - (id)init{
     self = [super init];
     if (self != nil)[self prepareAudioUnit];
@@ -125,22 +126,20 @@ static OSStatus renderCallback(void*                       inRefCon,
     cuteWaveDef.factor = 0.0;
     [self setFrequency:440];
     cuteWaveDef.freqz = cuteWaveDef.freqz;
-    AudioStreamBasicDescription audioFormat;
-    audioFormat.mSampleRate         = cuteWaveDef.sampleRate;
-    audioFormat.mFormatID           = kAudioFormatLinearPCM;
-    audioFormat.mFormatFlags        = kAudioFormatFlagsAudioUnitCanonical;
-    audioFormat.mChannelsPerFrame   = 2;
-    audioFormat.mBytesPerPacket     = sizeof(AudioUnitSampleType);
-    audioFormat.mBytesPerFrame      = sizeof(AudioUnitSampleType);
-    audioFormat.mFramesPerPacket    = 1;
-    audioFormat.mBitsPerChannel     = 8 * sizeof(AudioUnitSampleType);
-    audioFormat.mReserved           = 0;
+    AudioStreamBasicDescription audioFormat = AUCanonicalASBD(cuteWaveDef.sampleRate, 2);
     AudioUnitSetProperty(audioUnit,
                          kAudioUnitProperty_StreamFormat,
                          kAudioUnitScope_Input,
                          0,
                          &audioFormat,
                          sizeof(audioFormat));
+
+    AudioSessionInitialize(NULL, NULL, NULL,NULL);
+    Float32 duration = 128 / cuteWaveDef.sampleRate;
+    AudioSessionSetProperty(kAudioSessionProperty_PreferredHardwareIOBufferDuration, 
+                            sizeof(Float32),
+                            &duration);
+    
 }
 
 -(void)play{
