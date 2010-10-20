@@ -16,6 +16,7 @@
 		8C212B11125EF26D0071F500 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C212B10125EF26D0071F500 /* AudioToolbox.framework */; };
 		8C212C5A125F27D80071F500 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C212C59125F27D80071F500 /* Default.png */; };
 		8C212C5E125F2A3A0071F500 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C212C5D125F2A3A0071F500 /* icon.png */; };
+		8C324D3F126C724F00B49DC6 /* iPhoneCoreAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C324D3E126C724F00B49DC6 /* iPhoneCoreAudio.m */; };
 		8C36610812672DA6008BD17B /* SineWaveLFO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C36610712672DA6008BD17B /* SineWaveLFO.m */; };
 		8C36610B12672EBC008BD17B /* AbstractLFO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C36610A12672EBC008BD17B /* AbstractLFO.m */; };
 		8C3663A712682712008BD17B /* SquareWaveLFO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3663A612682712008BD17B /* SquareWaveLFO.m */; };
@@ -25,6 +26,7 @@
 		8C46276812644EFF003F7A0F /* ChromaticPadSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C46276712644EFF003F7A0F /* ChromaticPadSynthesizer.m */; };
 		8C4627B612648A9B003F7A0F /* DebugLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4627B512648A9B003F7A0F /* DebugLabelView.m */; };
 		8C4628F5126570AF003F7A0F /* AnyScalePadSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4628F4126570AF003F7A0F /* AnyScalePadSynthesizer.m */; };
+		8C87639712689F6800CBDCA5 /* SawWaveLFO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C87639612689F6800CBDCA5 /* SawWaveLFO.m */; };
 		8CA49FEB125FEDB30045D85B /* CuteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA49FEA125FEDB30045D85B /* CuteView.m */; };
 		8CBEF287125D63E90058EA44 /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBEF286125D63E90058EA44 /* FrontViewController.m */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,8 @@
 		8C212B10125EF26D0071F500 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8C212C59125F27D80071F500 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		8C212C5D125F2A3A0071F500 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		8C324D3D126C724F00B49DC6 /* iPhoneCoreAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneCoreAudio.h; sourceTree = "<group>"; };
+		8C324D3E126C724F00B49DC6 /* iPhoneCoreAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneCoreAudio.m; sourceTree = "<group>"; };
 		8C365E0C1265A296008BD17B /* ScaleArrays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaleArrays.h; sourceTree = "<group>"; };
 		8C36610612672DA6008BD17B /* SineWaveLFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SineWaveLFO.h; sourceTree = "<group>"; };
 		8C36610712672DA6008BD17B /* SineWaveLFO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SineWaveLFO.m; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 		8C4627B512648A9B003F7A0F /* DebugLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugLabelView.m; sourceTree = "<group>"; };
 		8C4628F3126570AF003F7A0F /* AnyScalePadSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnyScalePadSynthesizer.h; sourceTree = "<group>"; };
 		8C4628F4126570AF003F7A0F /* AnyScalePadSynthesizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnyScalePadSynthesizer.m; sourceTree = "<group>"; };
+		8C87639512689F6800CBDCA5 /* SawWaveLFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SawWaveLFO.h; sourceTree = "<group>"; };
+		8C87639612689F6800CBDCA5 /* SawWaveLFO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SawWaveLFO.m; sourceTree = "<group>"; };
 		8CA49FE9125FEDB30045D85B /* CuteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CuteView.h; sourceTree = "<group>"; };
 		8CA49FEA125FEDB30045D85B /* CuteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CuteView.m; sourceTree = "<group>"; };
 		8CBEF285125D63E90058EA44 /* FrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontViewController.h; sourceTree = "<group>"; };
@@ -169,6 +175,8 @@
 				8C3663A612682712008BD17B /* SquareWaveLFO.m */,
 				8C3663AE12682848008BD17B /* RandomLFO.h */,
 				8C3663AF12682848008BD17B /* RandomLFO.m */,
+				8C87639512689F6800CBDCA5 /* SawWaveLFO.h */,
+				8C87639612689F6800CBDCA5 /* SawWaveLFO.m */,
 			);
 			name = LFO;
 			sourceTree = "<group>";
@@ -211,6 +219,8 @@
 			children = (
 				8C212B05125EF2490071F500 /* RemoteOutput.h */,
 				8C212B06125EF2490071F500 /* RemoteOutput.m */,
+				8C324D3D126C724F00B49DC6 /* iPhoneCoreAudio.h */,
+				8C324D3E126C724F00B49DC6 /* iPhoneCoreAudio.m */,
 			);
 			name = Synthesizer;
 			sourceTree = "<group>";
@@ -292,6 +302,8 @@
 				8C36610B12672EBC008BD17B /* AbstractLFO.m in Sources */,
 				8C3663A712682712008BD17B /* SquareWaveLFO.m in Sources */,
 				8C3663B012682848008BD17B /* RandomLFO.m in Sources */,
+				8C87639712689F6800CBDCA5 /* SawWaveLFO.m in Sources */,
+				8C324D3F126C724F00B49DC6 /* iPhoneCoreAudio.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
